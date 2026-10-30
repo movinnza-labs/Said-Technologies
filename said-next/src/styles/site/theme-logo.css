@@ -1,0 +1,94 @@
+/* SAID Technologies — logo-matched palette for index-v1.html only.
+   Taken from the official logo: navy #123360 (main) and yellow #EFBB29 (accent),
+   with an amber partner #F59E0B for gradients and warm cream backgrounds.
+   Loaded after theme-said.css; overrides its colour tokens. Yellow fills always carry navy text (white on yellow is unreadable). */
+
+:root.theme-logo {
+  --ink-950: #071a36; --ink-900: #0d2a52; --ink-800: #123360; --ink-700: #2d4670; --ink-600: #52668a;
+  --brand-50: #eef3fa; --brand-100: #dce6f4; --brand-200: #b9cbe6; --brand-300: #9db8df;
+  --brand-500: #2a5298; --brand-600: #1b4480; --brand-700: #123360; --brand-800: #0d2a52;
+  --ink950-rgb: 7, 26, 54; --ink900-rgb: 13, 42, 82;
+  --b300-rgb: 157, 184, 223; --b500-rgb: 42, 82, 152; --b600-rgb: 27, 68, 128; --b700-rgb: 18, 51, 96;
+  --gold: #efbb29; --gold-300: #f7d36e; --gold-600: #c99410; --gold-rgb: 239, 187, 41;
+  --purple: #f59e0b; --purple-rgb: 245, 158, 11;   /* secondary glow: amber */
+  --g-fresh: linear-gradient(120deg, #efbb29 0%, #f7c948 50%, #f59e0b 100%);
+  --g-violet: linear-gradient(120deg, #123360 0%, #2a5298 100%);
+  --surface-alt: #fbf8f1; --border: #ece6d8;
+  --on-dark-text: #c3cfe3; --on-dark-strong: #eaf0f9;
+  --logo-ink: #0d2a52;
+}
+.theme-logo ::selection { background: rgba(var(--gold-rgb), .3); }
+.theme-logo .notice { background: #fff8e6; color: var(--ink-700); border-bottom-color: #f6e3b0; }
+.theme-logo .notice strong { color: var(--ink-800); }
+
+/* yellow fills: navy text */
+.theme-logo .on-dark .btn-primary, .theme-logo .section-dark .btn-primary,
+.theme-logo .btn-primary, .theme-logo .header-cta,
+.theme-logo.header-overlay .site-header:not(.is-scrolled):not(:has(.nav-item.is-open)) .header-cta { color: var(--logo-ink); box-shadow: 0 12px 30px -12px rgba(var(--gold-rgb), .7); }
+.theme-logo .on-dark .btn-primary:hover, .theme-logo .section-dark .btn-primary:hover,
+.theme-logo .btn-primary:hover, .theme-logo .header-cta:hover { color: var(--logo-ink); box-shadow: 0 16px 36px -12px rgba(var(--gold-rgb), .85); }
+.theme-logo .ticker { color: var(--logo-ink); }
+.theme-logo .ticker li::after { background: var(--logo-ink); opacity: .7; }
+.theme-logo .card.spot:hover .icon, .theme-logo .value:hover .value-ic,
+.theme-logo .photo-card .num, .theme-logo .tl-ic, .theme-logo .industry-tile:hover .industry-go { color: var(--logo-ink); }
+.theme-logo .checks li::after { border-color: var(--logo-ink); }
+.theme-logo .video-card .play svg { fill: var(--logo-ink); }
+.theme-logo .chip-ic, .theme-logo .c2 .chip-ic { background: var(--g-violet); color: #fff; }
+.theme-logo .c4 .chip-ic { background: var(--g-fresh); color: var(--logo-ink); }
+
+/* light sections: navy links and labels (yellow text on white is unreadable) */
+.theme-logo .text-link { color: var(--ink-800); }
+.theme-logo .text-link:hover { color: var(--brand-600); }
+.theme-logo .eyebrow { color: var(--ink-800); }
+.theme-logo .post-card .tag { background: #fff3cf; color: var(--ink-800); }
+
+/* hero */
+.theme-logo .hero-dark { background: radial-gradient(120% 90% at 0% 0%, #1b4480 0%, var(--ink-950) 58%); }
+.theme-logo .hero-dark .accent {
+  background: linear-gradient(100deg, #efbb29 0%, #f7d36e 30%, #fff1c2 50%, #f59e0b 75%, #efbb29 100%);
+  background-size: 250% 100%; -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.theme-logo .badge { background: rgba(var(--gold-rgb), .1); border-color: rgba(var(--gold-rgb), .4); }
+
+/* text on dark backgrounds: soft yellow */
+.theme-logo .on-dark .text-link, .theme-logo .section-dark .text-link,
+.theme-logo .card.spot .text-link, .theme-logo .card.spot .num, .theme-logo .tl-step,
+.theme-logo .hero-dark .eyebrow, .theme-logo .section-dark .eyebrow, .theme-logo .cta-final .eyebrow,
+.theme-logo .hero-aside .text-link { color: #f7d36e; }
+
+/* dark sections in logo navy */
+.theme-logo .services-dark { background: linear-gradient(180deg, var(--ink-950), #0f2c58); }
+.theme-logo .process { background: radial-gradient(90% 120% at 100% 0%, #1b4480 0%, var(--ink-950) 60%); }
+.theme-logo .quote-card { background: linear-gradient(135deg, var(--ink-800), var(--ink-950)); }
+
+/* warm cream rhythm for light sections */
+.theme-logo .section-alt { background: #fbf8f1; }
+.theme-logo .about-media::before { background: radial-gradient(rgba(var(--gold-rgb), .85) 2px, transparent 2.5px) 0 0 / 14px 14px; }
+
+/* footer */
+.theme-logo .site-footer::before { height: 3px; background: linear-gradient(90deg, var(--ink-800), var(--gold) 50%, var(--ink-800)); }
+.theme-logo .footer-col a:hover { color: #f7d36e; }
+/* labels inside any dark block (e.g. careers banner) stay soft yellow */
+.theme-logo .on-dark .eyebrow { color: #f7d36e; }
+
+/* ---------- Hero hub (same diagram as index-v2), tuned for the dark navy hero ---------- */
+.theme-logo .hub-wrap { --ent: #efbb29; --ent-rgb: 239, 187, 41; --edu: #8fb3ea; --edu-rgb: 143, 179, 234; }
+.theme-logo .hero-dark .hub::before { background: radial-gradient(closest-side, rgba(var(--gold-rgb), .14), rgba(42, 82, 152, .18) 55%, transparent 75%); }
+.theme-logo .hero-dark .orbit.o1 { stroke: rgba(255,255,255,.22); }
+.theme-logo .hero-dark .orbit.o2 { stroke: rgba(var(--gold-rgb), .45); }
+.theme-logo .hero-dark .hub-spoke { opacity: .7; }
+.theme-logo .hero-dark .hub-node { background: rgba(255,255,255,.94); color: var(--logo-ink); border-color: rgba(255,255,255,.6); box-shadow: 0 14px 30px -12px rgba(0,0,0,.55); backdrop-filter: blur(8px); }
+.theme-logo .hero-dark .hub-node .hn-ic { background: var(--ink-800); color: var(--gold); }
+.theme-logo .hero-dark .hub-node.edu .hn-ic { background: #dce6f4; color: var(--ink-800); }
+.theme-logo .hero-dark .hub-node.is-on { background: var(--g-fresh); color: var(--logo-ink); border-color: transparent; box-shadow: 0 12px 30px -8px rgba(var(--gold-rgb), .7); }
+.theme-logo .hero-dark .hub-node.is-on .hn-ic { background: var(--logo-ink); color: var(--gold); }
+.theme-logo .hero-dark .hub-node.edu.is-on { background: #dce6f4; color: var(--logo-ink); box-shadow: 0 12px 30px -8px rgba(var(--edu-rgb), .7); }
+.theme-logo .hero-dark .hub-node.edu.is-on .hn-ic { background: var(--ink-800); color: #fff; }
+.theme-logo .hero-dark .core-photo { border-color: rgba(255,255,255,.9); box-shadow: 0 30px 70px -20px rgba(0,0,0,.6), 0 0 0 10px rgba(var(--gold-rgb), .12); }
+.theme-logo .hero-dark .hub-core::after { border-color: rgba(var(--gold-rgb), .5); }
+.theme-logo .hero-dark .core-logo { box-shadow: 0 16px 36px -10px rgba(0,0,0,.6); }
+.theme-logo .hero-dark .hub-legend { color: var(--on-dark-text); }
+@media (min-width: 64rem) {
+  .theme-logo .hero-dark .hero-grid { grid-template-columns: 1fr 1.05fr; gap: 32px; }
+  .theme-logo .hero-dark .hub-wrap { margin-right: -24px; }
+}

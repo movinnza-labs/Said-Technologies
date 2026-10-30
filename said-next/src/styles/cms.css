@@ -1,0 +1,90 @@
+/* SAID Technologies — styles for parts added in the Next.js version:
+   mobile menu, form status messages, CMS cards (blogs, case studies) and article pages.
+   Uses the same tokens as site.css / site-said.css so it matches the approved design. */
+
+/* ---------- Mobile menu ---------- */
+.said-mobile-nav {
+  position: fixed; inset: 0; z-index: 60; overflow-y: auto; padding: 16px 20px 32px;
+  background: #fff; animation: saidNavIn .2s ease-out;
+}
+@keyframes saidNavIn { from { opacity: 0; transform: translateY(-8px); } }
+.said-mobile-nav__head { display: flex; align-items: center; justify-content: space-between; min-height: 56px; }
+.said-mobile-nav__head img { height: 40px; width: auto; }
+.said-mobile-nav__close {
+  width: 44px; height: 44px; border-radius: 12px; border: 1px solid var(--color-line);
+  background: #fff; font-size: 26px; line-height: 1; color: var(--color-ink-900); cursor: pointer;
+}
+.said-mobile-nav__list { margin-top: 16px; border-top: 1px solid var(--color-line); }
+.said-mobile-nav__list > li { border-bottom: 1px solid var(--color-line); }
+.said-mobile-nav__row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.said-mobile-nav__row a { flex: 1; padding: 16px 0; font: 700 1.05rem/1.3 var(--font-display); color: var(--color-ink-900); text-decoration: none; }
+.said-mobile-nav__row button {
+  width: 40px; height: 40px; border-radius: 10px; border: 1px solid var(--color-line); background: var(--color-canvas);
+  font-size: 22px; color: var(--color-ink-800); cursor: pointer;
+}
+.said-mobile-nav__sub { padding: 0 0 14px 12px; }
+.said-mobile-nav__sub a { display: block; padding: 8px 0; font-size: .95rem; color: var(--color-ink-700); text-decoration: none; }
+.said-mobile-nav__sub a:hover, .said-mobile-nav__row a:hover { color: var(--color-brand-600); }
+.said-mobile-nav__cta {
+  display: flex; align-items: center; justify-content: center; margin-top: 24px; min-height: 52px; border-radius: 999px;
+  background-image: var(--g-blue, linear-gradient(120deg, #2563eb, #06b6d4)); color: #fff; font-weight: 700; text-decoration: none;
+}
+@media (min-width: 80rem) { .said-mobile-nav { display: none; } }
+
+/* ---------- Form status ---------- */
+.said-form-status { margin-top: 16px; padding: 14px 16px; border-radius: 12px; font-size: .95rem; line-height: 1.5; }
+.said-form-status[data-kind="ok"] { background: #ecfdf3; color: #157f3d; border: 1px solid #a6e9c1; }
+.said-form-status[data-kind="error"] { background: #fef2f2; color: #b42318; border: 1px solid #fecaca; }
+
+/* ---------- CMS cards: blogs and case studies ---------- */
+.said-cards { display: grid; gap: 24px; }
+@media (min-width: 40rem) { .said-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 64rem) { .said-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.said-card {
+  position: relative; display: flex; flex-direction: column; overflow: hidden; border-radius: var(--radius-card, 1.25rem);
+  background: #fff; border: 1px solid var(--color-line); box-shadow: var(--shadow-card);
+  transition: transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s, border-color .35s;
+}
+.said-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lift); border-color: transparent; }
+.said-card:focus-within { outline: 3px solid var(--color-brand-500); outline-offset: 3px; }
+.said-card__img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; transition: transform 1.2s cubic-bezier(.2,.7,.2,1); }
+.said-card:hover .said-card__img { transform: scale(1.05); }
+.said-card__body { position: relative; flex: 1; display: flex; flex-direction: column; padding: 22px 24px 26px; }
+.said-card__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; font-size: .82rem; color: var(--color-ink-600); }
+.said-tag { display: inline-flex; padding: 5px 11px; border-radius: 999px; background: var(--color-brand-50); color: var(--color-brand-700); font-weight: 700; font-size: .75rem; }
+.said-card__title { margin-top: 14px; padding-right: 44px; font: 700 1.2rem/1.3 var(--font-display); color: var(--color-ink-950); }
+.said-card__title a { color: inherit; text-decoration: none; }
+.said-card__title a::after { content: ""; position: absolute; inset: 0; }
+.said-card__text { margin-top: 10px; color: var(--color-ink-700); font-size: .96rem; line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.said-card__steps { margin-top: auto; padding-top: 16px; font-size: .82rem; font-weight: 600; color: var(--color-brand-600); }
+.said-card__go {
+  position: absolute; right: 20px; top: 20px; width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  border: 1px solid var(--color-line); color: var(--color-ink-800); transition: transform .35s, background .35s, color .35s;
+}
+.said-card__go svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.said-card:hover .said-card__go { background: var(--color-brand-600); color: #fff; border-color: transparent; transform: rotate(-45deg); }
+@media (min-width: 64rem) {
+  .said-card--feature { grid-column: span 2; }
+  .said-card--feature .said-card__title { font-size: 1.6rem; }
+}
+
+/* ---------- Article (blog / case study detail) ---------- */
+.said-article__cover { width: 100%; max-width: 960px; margin: 0 auto 48px; display: block; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 24px; box-shadow: var(--shadow-lift); }
+.said-article { max-width: 46rem; margin: 0 auto; color: var(--color-ink-800); font-size: 1.06rem; line-height: 1.75; }
+.said-article > * + * { margin-top: 1.1em; }
+.said-article h2 { margin-top: 2em; font: 700 1.6rem/1.25 var(--font-display); color: var(--color-ink-950); }
+.said-article h3 { margin-top: 1.6em; font: 700 1.25rem/1.3 var(--font-display); color: var(--color-ink-950); }
+.said-article ul, .said-article ol { padding-left: 1.4em; }
+.said-article ul { list-style: disc; }
+.said-article ol { list-style: decimal; }
+.said-article a { color: var(--color-brand-600); text-decoration: underline; text-underline-offset: 3px; }
+.said-article blockquote { padding-left: 1em; border-left: 3px solid var(--color-brand-500); color: var(--color-ink-700); font-style: italic; }
+.said-article img { max-width: 100%; height: auto; border-radius: 16px; }
+.said-article__back { margin-top: 3em !important; font-weight: 700; }
+.said-article__back a { text-decoration: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .said-mobile-nav { animation: none; }
+  .said-card, .said-card__img, .said-card__go { transition: none; }
+  .said-card:hover { transform: none; }
+}

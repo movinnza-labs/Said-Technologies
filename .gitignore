@@ -21,3 +21,4 @@ node_modules/
 # Local backup copies (not part of the site)
 _backup*/
 _shot.html
+!.env.example

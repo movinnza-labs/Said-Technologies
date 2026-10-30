@@ -1,0 +1,20 @@
+{
+  "v1": {
+    "title": "SAID Technologies Pvt. Ltd. | Creating Possibilities. Delivering Solutions.",
+    "description": "SAID Technologies Pvt. Ltd. connects enterprise technology requirements with practical solution planning across IT infrastructure, cloud, managed services,…",
+    "htmlClass": "header-overlay theme-said theme-logo",
+    "route": "/"
+  },
+  "v2": {
+    "title": "SAID Technologies Pvt. Ltd. | Creating Possibilities. Delivering Solutions.",
+    "description": "SAID Technologies Pvt. Ltd. connects enterprise technology requirements with practical solution planning across IT infrastructure, cloud, managed services,…",
+    "htmlClass": "theme-ember",
+    "route": "/design/v2"
+  },
+  "v3": {
+    "title": "SAID Technologies Pvt. Ltd. | Creating Possibilities. Delivering Solutions.",
+    "description": "SAID Technologies Pvt. Ltd. connects enterprise technology requirements with practical solution planning across IT infrastructure, cloud, managed services,…",
+    "htmlClass": "theme-ember theme-nova",
+    "route": "/design/v3"
+  }
+}

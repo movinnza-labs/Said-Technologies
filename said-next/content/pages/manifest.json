@@ -1,0 +1,644 @@
+[
+  {
+    "route": "/404",
+    "file": "404.html",
+    "title": "Page not found | SAID Technologies",
+    "description": "The page could not be found."
+  },
+  {
+    "route": "/careers",
+    "file": "careers.html",
+    "title": "Careers — Build Your Next Chapter With SAID Technologies | SAID Technologies",
+    "description": "Technology projects bring together people with different strengths: technical understanding, problem-solving, communication, coordination and a willingness…"
+  },
+  {
+    "route": "/contact",
+    "file": "contact.html",
+    "title": "Contact Us — Let’s Discuss What You Want to Achieve | SAID Technologies",
+    "description": "Whether you are planning enterprise infrastructure, evaluating cloud requirements or developing an educational technology facility, begin with a clear…"
+  },
+  {
+    "route": "/education",
+    "file": "education.html",
+    "title": "Education — Technology That Creates Space for Discovery | SAID Technologies",
+    "description": "Help learners move from understanding concepts to exploring how they work. SAID Technologies’ education portfolio brings classroom technology, practical…"
+  },
+  {
+    "route": "/education/centre-of-excellence",
+    "file": "education__centre-of-excellence.html",
+    "title": "Centre of Excellence — Education Solutions | SAID Technologies",
+    "description": "Create a Shared Environment for Practical Capability. A Centre of Excellence should connect technology facilities with a clear academic purpose."
+  },
+  {
+    "route": "/education/centre-of-excellence/ai-and-ml-coe",
+    "file": "education__centre-of-excellence__ai-and-ml-coe.html",
+    "title": "Artificial Intelligence & Machine Learning CoE — Centre of Excellence | SAID Technologies",
+    "description": "Build the Skills to Develop and Evaluate AI. Create a learning environment for programming, data analysis, machine learning and applied AI experimentation."
+  },
+  {
+    "route": "/education/centre-of-excellence/ar-vr-and-digital-twin-coe",
+    "file": "education__centre-of-excellence__ar-vr-and-digital-twin-coe.html",
+    "title": "AR/VR & Digital Twin CoE — Centre of Excellence | SAID Technologies",
+    "description": "Make Complex Environments Easier to Explore. Connect immersive experiences with interactive 3D environments and approved information sources."
+  },
+  {
+    "route": "/education/centre-of-excellence/cybersecurity-and-digital-forensics-coe",
+    "file": "education__centre-of-excellence__cybersecurity-and-digital-forensics-coe.html",
+    "title": "Cybersecurity & Digital Forensics CoE — Centre of Excellence | SAID Technologies",
+    "description": "Learn Security in a Controlled Environment. Create an isolated academic setting for studying security concepts, investigation methods and digital evidence…"
+  },
+  {
+    "route": "/education/centre-of-excellence/ev-technology-coe",
+    "file": "education__centre-of-excellence__ev-technology-coe.html",
+    "title": "Electric Vehicle Technology CoE — Centre of Excellence | SAID Technologies",
+    "description": "Explore the Systems Behind Electric Mobility. Develop an academic environment for understanding electric vehicle subsystems through simulation,…"
+  },
+  {
+    "route": "/education/centre-of-excellence/industry-4-0-coe",
+    "file": "education__centre-of-excellence__industry-4-0-coe.html",
+    "title": "Industry 4.0 Centre of Excellence — Centre of Excellence | SAID Technologies",
+    "description": "Explore Connected Manufacturing Through Practical Learning. Bring robotics, industrial automation and intelligent manufacturing concepts into a shared…"
+  },
+  {
+    "route": "/education/centre-of-excellence/quantum-computing-and-ai-coe",
+    "file": "education__centre-of-excellence__quantum-computing-and-ai-coe.html",
+    "title": "Quantum Computing & AI CoE — Centre of Excellence | SAID Technologies",
+    "description": "Explore Emerging Computing Through Structured Learning. Introduce learners to quantum computing concepts and their relationship with classical computing and…"
+  },
+  {
+    "route": "/education/centre-of-excellence/semiconductor-technology-coe",
+    "file": "education__centre-of-excellence__semiconductor-technology-coe.html",
+    "title": "Semiconductor Technology CoE — Centre of Excellence | SAID Technologies",
+    "description": "Introduce the Semiconductor Design-to-Manufacturing Journey. Develop an academic scope that connects semiconductor concepts, design workflows and…"
+  },
+  {
+    "route": "/education/csr-education-solutions",
+    "file": "education__csr-education-solutions.html",
+    "title": "CSR Education Solutions — Education Solutions | SAID Technologies",
+    "description": "Connect Technology Investment With Educational Needs. Develop education technology programmes around the requirements of beneficiary institutions and…"
+  },
+  {
+    "route": "/education/csr-education-solutions/csr-funded-smart-classrooms",
+    "file": "education__csr-education-solutions__csr-funded-smart-classrooms.html",
+    "title": "CSR-Funded Smart Classrooms — CSR Education Solutions | SAID Technologies",
+    "description": "Connect Classroom Technology With Teacher Readiness. Plan classroom upgrades around school infrastructure, teaching needs and the availability of suitable…"
+  },
+  {
+    "route": "/education/csr-education-solutions/digital-literacy-initiatives",
+    "file": "education__csr-education-solutions__digital-literacy-initiatives.html",
+    "title": "Digital Literacy Initiatives — CSR Education Solutions | SAID Technologies",
+    "description": "Build Confidence With Everyday Digital Tools. Introduce learners to essential digital skills through structured, supervised practice."
+  },
+  {
+    "route": "/education/csr-education-solutions/institutional-technology-development",
+    "file": "education__csr-education-solutions__institutional-technology-development.html",
+    "title": "Institutional Technology Development — CSR Education Solutions | SAID Technologies",
+    "description": "Create a Practical Roadmap for Better Facilities. Assess institutional needs and prioritise technology investments against educational objectives."
+  },
+  {
+    "route": "/education/csr-education-solutions/robotics-and-stem-labs",
+    "file": "education__csr-education-solutions__robotics-and-stem-labs.html",
+    "title": "Robotics & STEM Labs — CSR Education Solutions | SAID Technologies",
+    "description": "Create Opportunities for Hands-On Discovery. Develop school laboratory programmes that combine practical kits with guided activities and teacher enablement."
+  },
+  {
+    "route": "/education/csr-education-solutions/rural-education-technology",
+    "file": "education__csr-education-solutions__rural-education-technology.html",
+    "title": "Rural Education Technology — CSR Education Solutions | SAID Technologies",
+    "description": "Plan Technology Around Local Conditions. Develop education technology programmes with attention to connectivity, power, accessibility and teacher readiness."
+  },
+  {
+    "route": "/education/digital-education-solutions",
+    "file": "education__digital-education-solutions.html",
+    "title": "Digital Education Solutions — Education Solutions | SAID Technologies",
+    "description": "Connect Learning Resources, Platforms and People. Develop digital learning access around the needs of your institution’s learners and educators."
+  },
+  {
+    "route": "/education/digital-education-solutions/digital-content-platforms",
+    "file": "education__digital-education-solutions__digital-content-platforms.html",
+    "title": "Digital Content Platforms — Digital Education Solutions | SAID Technologies",
+    "description": "Organise Resources Around Learning Needs. Evaluate digital educational content against curriculum coverage, learner age, language and accessibility…"
+  },
+  {
+    "route": "/education/digital-education-solutions/learning-management-systems",
+    "file": "education__digital-education-solutions__learning-management-systems.html",
+    "title": "Learning Management Systems — Digital Education Solutions | SAID Technologies",
+    "description": "Give Learning a Structured Digital Home. Organise courses, learning resources and assessments within an institution-approved platform."
+  },
+  {
+    "route": "/education/digital-education-solutions/online-learning-and-examinations",
+    "file": "education__digital-education-solutions__online-learning-and-examinations.html",
+    "title": "Online Learning & Examination Solutions — Digital Education Solutions | SAID Technologies",
+    "description": "Run Online Courses and Assessments With Confidence. Plan online courses, assessments and examinations around the institution’s academic calendar, learner…"
+  },
+  {
+    "route": "/education/digital-education-solutions/online-learning-infrastructure",
+    "file": "education__digital-education-solutions__online-learning-infrastructure.html",
+    "title": "Online Learning Infrastructure — Digital Education Solutions | SAID Technologies",
+    "description": "Build the Foundation for Consistent Digital Access. Assess the devices, connectivity and platform capacity needed to support online learning."
+  },
+  {
+    "route": "/education/digital-education-solutions/smart-e-libraries",
+    "file": "education__digital-education-solutions__smart-e-libraries.html",
+    "title": "Smart E-Libraries — Digital Education Solutions | SAID Technologies",
+    "description": "Make Knowledge Accessible Beyond the Shelf. Create a managed reading and learning environment that combines digital devices with approved educational…"
+  },
+  {
+    "route": "/education/digital-education-solutions/virtual-classrooms",
+    "file": "education__digital-education-solutions__virtual-classrooms.html",
+    "title": "Virtual Classrooms — Digital Education Solutions | SAID Technologies",
+    "description": "Connect Teachers and Learners Across Locations. Plan online teaching environments around the institution’s delivery methods and connectivity conditions."
+  },
+  {
+    "route": "/education/higher-education",
+    "file": "education__higher-education.html",
+    "title": "Higher Education — Education Solutions | SAID Technologies",
+    "description": "Infrastructure for Applied Learning and New Ideas. Develop academic technology environments that support teaching, experimentation and research."
+  },
+  {
+    "route": "/education/higher-education/advanced-technology-laboratories",
+    "file": "education__higher-education__advanced-technology-laboratories.html",
+    "title": "Advanced Technology Laboratories — Higher Education | SAID Technologies",
+    "description": "Bridge Theory and Engineering Practice. Create practical learning environments around approved academic and technical objectives."
+  },
+  {
+    "route": "/education/higher-education/digital-campus-solutions",
+    "file": "education__higher-education__digital-campus-solutions.html",
+    "title": "Digital Campus Solutions — Higher Education | SAID Technologies",
+    "description": "Connect Campus Information and Services. Evaluate digital systems around the institution’s workflows and user needs."
+  },
+  {
+    "route": "/education/higher-education/research-and-innovation-infrastructure",
+    "file": "education__higher-education__research-and-innovation-infrastructure.html",
+    "title": "Research & Innovation Infrastructure — Higher Education | SAID Technologies",
+    "description": "Create a Foundation for Experimentation. Assess the shared computing, equipment and information requirements of institutional research activities."
+  },
+  {
+    "route": "/education/higher-education/university-it-infrastructure",
+    "file": "education__higher-education__university-it-infrastructure.html",
+    "title": "University IT Infrastructure — Higher Education | SAID Technologies",
+    "description": "Connect the Systems Behind Campus Learning. Plan university computing, networking and digital access as a coordinated environment."
+  },
+  {
+    "route": "/education/school-education",
+    "file": "education__school-education.html",
+    "title": "School Education — Education Solutions | SAID Technologies",
+    "description": "Turn Curiosity Into Practical Learning. Create learning environments that encourage students to ask questions, explore ideas and build confidence with…"
+  },
+  {
+    "route": "/education/school-education/coding-and-innovation-labs",
+    "file": "education__school-education__coding-and-innovation-labs.html",
+    "title": "Coding & Innovation Labs — School Education | SAID Technologies",
+    "description": "Create a Place for Ideas to Take Shape. Enable students to explore programming, electronics and simple prototypes through guided projects."
+  },
+  {
+    "route": "/education/school-education/digital-learning-solutions",
+    "file": "education__school-education__digital-learning-solutions.html",
+    "title": "Digital Learning Solutions — School Education | SAID Technologies",
+    "description": "Bring Learning Resources Closer to Students. Connect learners and teachers with digital devices, appropriate content and structured access."
+  },
+  {
+    "route": "/education/school-education/robotics-and-ai-labs",
+    "file": "education__school-education__robotics-and-ai-labs.html",
+    "title": "Robotics & AI Labs — School Education | SAID Technologies",
+    "description": "Give Students Something to Build, Test and Improve. Introduce robotics, coding and age-appropriate AI concepts through guided practical activities."
+  },
+  {
+    "route": "/education/school-education/smart-classrooms",
+    "file": "education__school-education__smart-classrooms.html",
+    "title": "Smart Classrooms — School Education | SAID Technologies",
+    "description": "Make Lessons More Interactive. Connect teaching with digital presentation, audiovisual resources and classroom interaction."
+  },
+  {
+    "route": "/education/school-education/stem-education",
+    "file": "education__school-education__stem-education.html",
+    "title": "STEM Education — School Education | SAID Technologies",
+    "description": "Connect Classroom Concepts With Hands-On Exploration. Help students investigate scientific and engineering ideas through activities that combine observation,…"
+  },
+  {
+    "route": "/index-original",
+    "file": "index-original.html",
+    "title": "SAID Technologies Pvt. Ltd. — Creating Possibilities. Delivering Solutions.",
+    "description": "SAID Technologies Pvt. Ltd. connects enterprise technology requirements with practical solution planning across IT infrastructure, cloud, managed services,…"
+  },
+  {
+    "route": "/industries",
+    "file": "industries.html",
+    "title": "Industries — Technology Priorities Shaped by Your Industry | SAID Technologies",
+    "description": "The right technology approach depends on the environment in which it will operate. Explore requirements across workplace systems, infrastructure, cloud,…"
+  },
+  {
+    "route": "/industries/automobile",
+    "file": "industries__automobile.html",
+    "title": "Automobile — Industries | SAID Technologies",
+    "description": "Support Engineering, Production and Business Workflows. Plan technology around the computing, collaboration and connectivity needs of your automotive…"
+  },
+  {
+    "route": "/industries/bfsi-nbfc",
+    "file": "industries__bfsi-nbfc.html",
+    "title": "BFSI / NBFC — Industries | SAID Technologies",
+    "description": "Plan for Trust, Continuity and Accountability. Develop technology requirements with attention to information access, operational resilience and traceable…"
+  },
+  {
+    "route": "/industries/global-capability-centres",
+    "file": "industries__global-capability-centres.html",
+    "title": "Global Capability Centres — Industries | SAID Technologies",
+    "description": "Technology for Connected, Distributed Teams. Plan workplace and infrastructure environments that support collaboration across locations."
+  },
+  {
+    "route": "/industries/it-ites",
+    "file": "industries__it-ites.html",
+    "title": "IT / ITES — Industries | SAID Technologies",
+    "description": "Equip Teams for Dependable Digital Delivery. Plan computing, cloud access and collaboration around the tools and workloads your teams use."
+  },
+  {
+    "route": "/industries/manufacturing",
+    "file": "industries__manufacturing.html",
+    "title": "Manufacturing — Industries | SAID Technologies",
+    "description": "Connect Enterprise Technology With Operational Needs. Assess the relationship between business systems, factory connectivity and industrial technology."
+  },
+  {
+    "route": "/industries/media",
+    "file": "industries__media.html",
+    "title": "Media — Industries | SAID Technologies",
+    "description": "Plan Infrastructure for Demanding Content Workflows. Assess the computing, storage and collaboration needs of creative and production teams."
+  },
+  {
+    "route": "/industries/pharma-and-healthcare",
+    "file": "industries__pharma-and-healthcare.html",
+    "title": "Pharma & Healthcare — Industries | SAID Technologies",
+    "description": "Technology Around Sensitive Information and Essential Workflows. Assess infrastructure, devices and information access around the practical needs of your…"
+  },
+  {
+    "route": "/industries/real-estate-and-infrastructure",
+    "file": "industries__real-estate-and-infrastructure.html",
+    "title": "Real Estate & Infrastructure — Industries | SAID Technologies",
+    "description": "Technology for Project Sites, Offices and Property Operations. Plan technology around project sites, sales offices, corporate teams and the properties you…"
+  },
+  {
+    "route": "/industries/retail",
+    "file": "industries__retail.html",
+    "title": "Retail — Industries | SAID Technologies",
+    "description": "Create Consistency Across Business Locations. Assess the technology requirements of stores, offices and central operations as a connected environment."
+  },
+  {
+    "route": "/industries/startups",
+    "file": "industries__startups.html",
+    "title": "Startups — Industries | SAID Technologies",
+    "description": "Build a Foundation That Can Grow With Your Business. Start with the technology needed for your current team and near-term priorities."
+  },
+  {
+    "route": "/insights",
+    "file": "insights.html",
+    "title": "Insights — Perspectives for Better Technology Decisions | SAID Technologies",
+    "description": "Explore ideas, practical planning guidance and verified updates across enterprise IT, digital transformation and educational technology."
+  },
+  {
+    "route": "/insights/blogs",
+    "file": "insights__blogs.html",
+    "title": "Blogs — Insights | SAID Technologies",
+    "description": "Read practical perspectives on infrastructure, cloud, managed services, data, AI and technology-enabled education."
+  },
+  {
+    "route": "/insights/case-studies",
+    "file": "insights__case-studies.html",
+    "title": "Case Studies — Insights | SAID Technologies",
+    "description": "Explore how approved customer engagements were planned and delivered."
+  },
+  {
+    "route": "/insights/events",
+    "file": "insights__events.html",
+    "title": "Events — Insights | SAID Technologies",
+    "description": "Discover confirmed opportunities to explore technology through workshops, demonstrations, webinars and practical learning sessions."
+  },
+  {
+    "route": "/insights/news",
+    "file": "insights__news.html",
+    "title": "News — Insights | SAID Technologies",
+    "description": "Find verified announcements about SAID’s activities, programmes and company developments."
+  },
+  {
+    "route": "/privacy-policy",
+    "file": "privacy-policy.html",
+    "title": "Privacy Policy (Draft) | SAID Technologies",
+    "description": "Privacy Policy for the SAID Technologies website."
+  },
+  {
+    "route": "/terms-of-use",
+    "file": "terms-of-use.html",
+    "title": "Terms of Use (Draft) | SAID Technologies",
+    "description": "Terms of Use for the SAID Technologies website."
+  },
+  {
+    "route": "/what-we-do",
+    "file": "what-we-do.html",
+    "title": "What We Do — Technology Solutions Built Around Your Priorities | SAID Technologies",
+    "description": "Every organisation has a different technology starting point. Some need stronger infrastructure, some need better collaboration, and others need new…"
+  },
+  {
+    "route": "/what-we-do/annual-maintenance-contract",
+    "file": "what-we-do__annual-maintenance-contract.html",
+    "title": "Annual Maintenance Contract — Plan Support Beyond Installation | SAID Technologies",
+    "description": "Plan preventive maintenance, technical assistance and service coordination around your technology assets."
+  },
+  {
+    "route": "/what-we-do/annual-maintenance-contract/enterprise-amc-services",
+    "file": "what-we-do__annual-maintenance-contract__enterprise-amc-services.html",
+    "title": "Enterprise AMC Services — Annual Maintenance Contract | SAID Technologies",
+    "description": "Define Support Across Your Technology Estate. Bring asset coverage, service locations and support processes into one agreed maintenance framework."
+  },
+  {
+    "route": "/what-we-do/annual-maintenance-contract/it-spares-and-accessories",
+    "file": "what-we-do__annual-maintenance-contract__it-spares-and-accessories.html",
+    "title": "IT Spares & Accessories — Annual Maintenance Contract | SAID Technologies",
+    "description": "Plan the Parts That Keep Equipment Serviceable. Identify compatible spares and accessories based on the installed equipment and support requirements."
+  },
+  {
+    "route": "/what-we-do/annual-maintenance-contract/preventive-maintenance",
+    "file": "what-we-do__annual-maintenance-contract__preventive-maintenance.html",
+    "title": "Preventive Maintenance — Annual Maintenance Contract | SAID Technologies",
+    "description": "Make Equipment Checks a Planned Routine. Develop a maintenance schedule around equipment type, manufacturer guidance and operating conditions."
+  },
+  {
+    "route": "/what-we-do/annual-maintenance-contract/real-time-infrastructure-monitoring",
+    "file": "what-we-do__annual-maintenance-contract__real-time-infrastructure-monitoring.html",
+    "title": "Real-Time Infrastructure Monitoring — Annual Maintenance Contract | SAID Technologies",
+    "description": "Make Infrastructure Health Easier to See. Define which systems should be monitored, which conditions should generate alerts and who should respond."
+  },
+  {
+    "route": "/what-we-do/cloud-solutions",
+    "file": "what-we-do__cloud-solutions.html",
+    "title": "Cloud Solutions — Build a Cloud Roadmap Around Real Requirements | SAID Technologies",
+    "description": "Explore cloud environments that align applications, access, performance, security and operating costs with your organisation’s requirements."
+  },
+  {
+    "route": "/what-we-do/cloud-solutions/ai-powered-cloud-workspace-solutions",
+    "file": "what-we-do__cloud-solutions__ai-powered-cloud-workspace-solutions.html",
+    "title": "AI-Powered Cloud Workspace Solutions — Cloud Solutions | SAID Technologies",
+    "description": "Explore AI Within Everyday Collaboration. Identify where AI-assisted search, knowledge access and workflow support could improve the way teams use…"
+  },
+  {
+    "route": "/what-we-do/cloud-solutions/amazon-web-services",
+    "file": "what-we-do__cloud-solutions__amazon-web-services.html",
+    "title": "Amazon Web Services — Cloud Solutions | SAID Technologies",
+    "description": "Plan an AWS Environment With Clear Operating Boundaries. Translate business or academic requirements into an AWS architecture with defined account ownership,…"
+  },
+  {
+    "route": "/what-we-do/cloud-solutions/cloud-managed-services",
+    "file": "what-we-do__cloud-solutions__cloud-managed-services.html",
+    "title": "Cloud Managed Services — Cloud Solutions | SAID Technologies",
+    "description": "Give Cloud Operations Clear Ownership. Establish the processes and responsibilities required to operate a cloud environment after deployment."
+  },
+  {
+    "route": "/what-we-do/cloud-solutions/cloud-migration-solutions",
+    "file": "what-we-do__cloud-solutions__cloud-migration-solutions.html",
+    "title": "Cloud Migration Solutions — Cloud Solutions | SAID Technologies",
+    "description": "Move With a Plan for Continuity. Approach migration through application discovery, dependency mapping and phased execution."
+  },
+  {
+    "route": "/what-we-do/cloud-solutions/google-cloud-solutions",
+    "file": "what-we-do__cloud-solutions__google-cloud-solutions.html",
+    "title": "Google Cloud Solutions — Cloud Solutions | SAID Technologies",
+    "description": "Align Cloud Resources With Your Applications. Evaluate Google Cloud services against your computing, storage, data and application requirements."
+  },
+  {
+    "route": "/what-we-do/cloud-solutions/microsoft-azure-solutions",
+    "file": "what-we-do__cloud-solutions__microsoft-azure-solutions.html",
+    "title": "Microsoft Azure Solutions — Cloud Solutions | SAID Technologies",
+    "description": "Connect Microsoft Workloads With a Considered Cloud Plan. Assess how Azure could support your applications, infrastructure and Microsoft environment."
+  },
+  {
+    "route": "/what-we-do/cybersecurity",
+    "file": "what-we-do__cybersecurity.html",
+    "title": "Cybersecurity — Make Security Part of the Technology Plan | SAID Technologies",
+    "description": "Identify risks and evaluate protection requirements across devices, identities, applications, networks and information."
+  },
+  {
+    "route": "/what-we-do/cybersecurity/application-security",
+    "file": "what-we-do__cybersecurity__application-security.html",
+    "title": "Application Security — Cybersecurity | SAID Technologies",
+    "description": "Consider Security Across the Application Lifecycle. Identify application risks and define appropriate assessment and remediation requirements."
+  },
+  {
+    "route": "/what-we-do/cybersecurity/cloud-security",
+    "file": "what-we-do__cybersecurity__cloud-security.html",
+    "title": "Cloud Security — Cybersecurity | SAID Technologies",
+    "description": "Build Controls Into Cloud Adoption. Review cloud account access, network exposure, information handling and operational logging."
+  },
+  {
+    "route": "/what-we-do/cybersecurity/cybersecurity-audit-va-pt",
+    "file": "what-we-do__cybersecurity__cybersecurity-audit-va-pt.html",
+    "title": "Cybersecurity Audit (VA/PT) — Cybersecurity | SAID Technologies",
+    "description": "Find Weaknesses Before They Become Incidents. Assess the security of your networks, systems and applications through structured vulnerability assessment and…"
+  },
+  {
+    "route": "/what-we-do/cybersecurity/data-security",
+    "file": "what-we-do__cybersecurity__data-security.html",
+    "title": "Data Security — Cybersecurity | SAID Technologies",
+    "description": "Understand and Protect Important Information. Identify where sensitive information is stored, who needs access and how it moves between systems."
+  },
+  {
+    "route": "/what-we-do/cybersecurity/endpoint-security",
+    "file": "what-we-do__cybersecurity__endpoint-security.html",
+    "title": "Endpoint Security — Cybersecurity | SAID Technologies",
+    "description": "Start Protection With the Devices People Use. Assess protection requirements across laptops, desktops and other supported endpoints."
+  },
+  {
+    "route": "/what-we-do/cybersecurity/identity-and-access-management",
+    "file": "what-we-do__cybersecurity__identity-and-access-management.html",
+    "title": "Identity & Access Management — Cybersecurity | SAID Technologies",
+    "description": "Give the Right People Appropriate Access. Establish how user identities are created, authenticated, reviewed and removed."
+  },
+  {
+    "route": "/what-we-do/cybersecurity/network-security",
+    "file": "what-we-do__cybersecurity__network-security.html",
+    "title": "Network Security — Cybersecurity | SAID Technologies",
+    "description": "Define the Boundaries Around Connected Systems. Assess how users, devices and applications connect across your environment."
+  },
+  {
+    "route": "/what-we-do/cybersecurity/operational-technology-security",
+    "file": "what-we-do__cybersecurity__operational-technology-security.html",
+    "title": "Operational Technology Security — Cybersecurity | SAID Technologies",
+    "description": "Respect the Operating Needs of Industrial Systems. Approach industrial security with attention to equipment safety, availability and controlled change."
+  },
+  {
+    "route": "/what-we-do/data-and-ai",
+    "file": "what-we-do__data-and-ai.html",
+    "title": "Data & AI — Turn Information Into Better Questions and Useful Decisions | SAID Technologies",
+    "description": "Connect data preparation, analytics, business intelligence and AI experimentation with practical organisational use cases."
+  },
+  {
+    "route": "/what-we-do/data-and-ai/ai-and-machine-learning",
+    "file": "what-we-do__data-and-ai__ai-and-machine-learning.html",
+    "title": "AI & Machine Learning — Data & AI | SAID Technologies",
+    "description": "Move From an Idea to a Measured Experiment. Select a use case that can be evaluated against a defined outcome."
+  },
+  {
+    "route": "/what-we-do/data-and-ai/business-intelligence",
+    "file": "what-we-do__data-and-ai__business-intelligence.html",
+    "title": "Business Intelligence — Data & AI | SAID Technologies",
+    "description": "Create a Shared View of Performance. Translate reporting requirements into dashboards and information views that support specific decisions."
+  },
+  {
+    "route": "/what-we-do/data-and-ai/data-analytics",
+    "file": "what-we-do__data-and-ai__data-analytics.html",
+    "title": "Data Analytics — Data & AI | SAID Technologies",
+    "description": "Understand What Your Data Can Tell You. Explore patterns, trends and relationships in organisational information."
+  },
+  {
+    "route": "/what-we-do/data-and-ai/data-engineering",
+    "file": "what-we-do__data-and-ai__data-engineering.html",
+    "title": "Data Engineering — Data & AI | SAID Technologies",
+    "description": "Build a Reliable Path From Source to Insight. Plan how information will be collected, transformed, stored and made available for analysis."
+  },
+  {
+    "route": "/what-we-do/data-and-ai/generative-ai",
+    "file": "what-we-do__data-and-ai__generative-ai.html",
+    "title": "Generative AI — Data & AI | SAID Technologies",
+    "description": "Explore Useful AI With Clear Boundaries. Identify where generative AI could assist with information access, content workflows or other approved…"
+  },
+  {
+    "route": "/what-we-do/data-and-ai/microsoft-data-solutions",
+    "file": "what-we-do__data-and-ai__microsoft-data-solutions.html",
+    "title": "Microsoft Data Solutions — Data & AI | SAID Technologies",
+    "description": "Evaluate Microsoft Tools for Your Data Environment. Assess how Microsoft reporting and data-platform options could fit your organisation’s information needs."
+  },
+  {
+    "route": "/what-we-do/erp-and-business-applications",
+    "file": "what-we-do__erp-and-business-applications.html",
+    "title": "ERP & Business Applications — Connect Business Processes With the Right Applications | SAID Technologies",
+    "description": "Connect business processes through applications selected around operational requirements and integration needs."
+  },
+  {
+    "route": "/what-we-do/google-workspace",
+    "file": "what-we-do__google-workspace.html",
+    "title": "Google Workspace — Bring Communication and Collaboration Together | SAID Technologies",
+    "description": "Bring communication, collaboration and administrative requirements into a structured digital workspace."
+  },
+  {
+    "route": "/what-we-do/infrastructure-solutions",
+    "file": "what-we-do__infrastructure-solutions.html",
+    "title": "Infrastructure Solutions — Build a Strong Foundation for Everyday Operations | SAID Technologies",
+    "description": "Build the foundation for connected workplaces through computing, storage, networking, audiovisual systems and end-user devices."
+  },
+  {
+    "route": "/what-we-do/infrastructure-solutions/apple-devices-and-services",
+    "file": "what-we-do__infrastructure-solutions__apple-devices-and-services.html",
+    "title": "Apple Devices and Services — Infrastructure Solutions | SAID Technologies",
+    "description": "Apple Devices Within a Connected Infrastructure Plan. Apple Devices and Services is one of the solution areas within SAID Technologies’ Infrastructure…"
+  },
+  {
+    "route": "/what-we-do/infrastructure-solutions/audio-visual-solutions",
+    "file": "what-we-do__infrastructure-solutions__audio-visual-solutions.html",
+    "title": "Audio-Visual Solutions — Infrastructure Solutions | SAID Technologies",
+    "description": "Make Every Space More Effective for Communication. Create meeting rooms, training facilities and presentation environments that help people communicate…"
+  },
+  {
+    "route": "/what-we-do/infrastructure-solutions/data-centre-solutions",
+    "file": "what-we-do__infrastructure-solutions__data-centre-solutions.html",
+    "title": "Data Centre Solutions — Infrastructure Solutions | SAID Technologies",
+    "description": "Infrastructure Designed Around Your Workloads. Develop a data centre environment that supports the applications, information and services your organisation…"
+  },
+  {
+    "route": "/what-we-do/infrastructure-solutions/device-lifecycle-management",
+    "file": "what-we-do__infrastructure-solutions__device-lifecycle-management.html",
+    "title": "Device Lifecycle Management — Infrastructure Solutions | SAID Technologies",
+    "description": "A Clear Plan From Deployment to Retirement. Manage technology assets through a structured lifecycle that covers deployment, allocation, maintenance, refresh…"
+  },
+  {
+    "route": "/what-we-do/infrastructure-solutions/end-user-devices",
+    "file": "what-we-do__infrastructure-solutions__end-user-devices.html",
+    "title": "End-User Devices — Infrastructure Solutions | SAID Technologies",
+    "description": "Equip People With Technology That Fits Their Work. Select devices according to the tasks, applications and working conditions of your users."
+  },
+  {
+    "route": "/what-we-do/infrastructure-solutions/mobility-solutions",
+    "file": "what-we-do__infrastructure-solutions__mobility-solutions.html",
+    "title": "Mobility Solutions — Infrastructure Solutions | SAID Technologies",
+    "description": "Keep Work Connected Beyond the Desk. Plan mobile technology around the needs of field teams, distributed employees and users working across locations."
+  },
+  {
+    "route": "/what-we-do/infrastructure-solutions/unified-endpoint-and-identity-management",
+    "file": "what-we-do__infrastructure-solutions__unified-endpoint-and-identity-management.html",
+    "title": "Unified Endpoint and Identity Management — Infrastructure Solutions | SAID Technologies",
+    "description": "Connect Device Management With User Access. Bring endpoint administration and identity requirements into a coordinated operating model."
+  },
+  {
+    "route": "/what-we-do/infrastructure-solutions/warehousing-solutions",
+    "file": "what-we-do__infrastructure-solutions__warehousing-solutions.html",
+    "title": "Warehousing Solutions — Infrastructure Solutions | SAID Technologies",
+    "description": "Improve Visibility Across Technology Logistics. Create a structured approach to receiving, storing, allocating and dispatching technology equipment."
+  },
+  {
+    "route": "/what-we-do/managed-print-services",
+    "file": "what-we-do__managed-print-services.html",
+    "title": "Managed Print Services — Make Printing Easier to Understand and Manage | SAID Technologies",
+    "description": "Review printing infrastructure, document workflows and support requirements to create a more manageable print environment."
+  },
+  {
+    "route": "/what-we-do/managed-services",
+    "file": "what-we-do__managed-services.html",
+    "title": "Managed Services — Put Structure Around Everyday IT Operations | SAID Technologies",
+    "description": "Define dependable operating support for workplace technology, infrastructure, applications and cloud environments."
+  },
+  {
+    "route": "/what-we-do/managed-services/ai-enabled-it-operations",
+    "file": "what-we-do__managed-services__ai-enabled-it-operations.html",
+    "title": "AI-Enabled IT Operations — Managed Services | SAID Technologies",
+    "description": "Evaluate Automation Where It Can Make a Measurable Difference. Explore how operational data and AI-assisted analysis could help teams identify patterns,…"
+  },
+  {
+    "route": "/what-we-do/managed-services/application-operations-and-maintenance",
+    "file": "what-we-do__managed-services__application-operations-and-maintenance.html",
+    "title": "Application Operations & Maintenance — Managed Services | SAID Technologies",
+    "description": "Give Business Applications a Defined Support Model. Establish how application issues, routine changes and operational requirements will be handled."
+  },
+  {
+    "route": "/what-we-do/managed-services/digital-workplace",
+    "file": "what-we-do__managed-services__digital-workplace.html",
+    "title": "Digital Workplace — Managed Services | SAID Technologies",
+    "description": "Support the Technology People Use Every Day. Create an operating support model for workplace devices, collaboration tools and user access."
+  },
+  {
+    "route": "/what-we-do/managed-services/enterprise-core-and-data-centre-services",
+    "file": "what-we-do__managed-services__enterprise-core-and-data-centre-services.html",
+    "title": "Enterprise Core & Data Centre Services — Managed Services | SAID Technologies",
+    "description": "Bring Operating Discipline to Core Infrastructure. Define the maintenance and support activities required for servers, storage, virtualisation and associated…"
+  },
+  {
+    "route": "/what-we-do/managed-services/network-and-infrastructure-managed-services",
+    "file": "what-we-do__managed-services__network-and-infrastructure-managed-services.html",
+    "title": "Network and Infrastructure Managed Services — Managed Services | SAID Technologies",
+    "description": "Keep Network Responsibilities Connected. Define support coverage for network devices, connectivity and associated infrastructure."
+  },
+  {
+    "route": "/what-we-do/staffing-solutions",
+    "file": "what-we-do__staffing-solutions.html",
+    "title": "Staffing Solutions — Match Technical Resources With Defined Responsibilities | SAID Technologies",
+    "description": "Address technical resource requirements through clearly defined roles, competency expectations and deployment responsibilities."
+  },
+  {
+    "route": "/what-we-do/staffing-solutions/it-staffing",
+    "file": "what-we-do__staffing-solutions__it-staffing.html",
+    "title": "IT Staffing — Staffing Solutions | SAID Technologies",
+    "description": "Define the Skills Your Team Needs. Develop role requirements around the work to be performed, the systems involved and the level of technical responsibility."
+  },
+  {
+    "route": "/what-we-do/staffing-solutions/people-development",
+    "file": "what-we-do__staffing-solutions__people-development.html",
+    "title": "People Development — Staffing Solutions | SAID Technologies",
+    "description": "Build Practical Capability Within Your Team. Connect learning requirements with the tasks people need to perform."
+  },
+  {
+    "route": "/what-we-do/staffing-solutions/technical-resource-deployment",
+    "file": "what-we-do__staffing-solutions__technical-resource-deployment.html",
+    "title": "Technical Resource Deployment — Staffing Solutions | SAID Technologies",
+    "description": "Put Support Closer to the Point of Need. Plan onsite or assigned technical resources around clearly defined operating responsibilities."
+  },
+  {
+    "route": "/who-we-are",
+    "file": "who-we-are.html",
+    "title": "Who We Are — Connecting Business, Technology and Learning | SAID Technologies",
+    "description": "Technology should make work more effective and learning more practical. SAID Technologies’ business positioning connects enterprise IT requirements with…"
+  }
+]
