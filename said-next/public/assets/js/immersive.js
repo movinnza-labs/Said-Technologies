@@ -24,7 +24,7 @@
         pts.push({
           x: Math.random() * w, y: Math.random() * h,
           vx: (Math.random() - 0.5) * 0.35, vy: (Math.random() - 0.5) * 0.35,
-          r: Math.random() * 1.6 + 0.6, c: Math.random() < 0.7 ? "127,176,255" : "34,211,238"
+          r: Math.random() * 1.6 + 0.6, c: Math.random() < 0.7 ? "94,234,212" : "56,189,248"
         });
       }
     };
@@ -44,14 +44,14 @@
         for (var j = i + 1; j < pts.length; j++) {
           var q = pts[j], dx = p.x - q.x, dy = p.y - q.y, d = dx * dx + dy * dy;
           if (d < LINK * LINK) {
-            ctx.strokeStyle = "rgba(127,176,255," + (0.22 * (1 - Math.sqrt(d) / LINK)).toFixed(3) + ")";
+            ctx.strokeStyle = "rgba(94,234,212," + (0.22 * (1 - Math.sqrt(d) / LINK)).toFixed(3) + ")";
             ctx.lineWidth = 1;
             ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(q.x, q.y); ctx.stroke();
           }
         }
         var pd = Math.sqrt((mouse.x - p.x) * (mouse.x - p.x) + (mouse.y - p.y) * (mouse.y - p.y));
         if (pd < 200) {
-          ctx.strokeStyle = "rgba(34,211,238," + (0.45 * (1 - pd / 200)).toFixed(3) + ")";
+          ctx.strokeStyle = "rgba(56,189,248," + (0.45 * (1 - pd / 200)).toFixed(3) + ")";
           ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(mouse.x, mouse.y); ctx.stroke();
         }
         ctx.fillStyle = "rgba(" + p.c + ",0.9)";
@@ -168,4 +168,22 @@
     window.addEventListener("resize", update);
     update();
   }
+})();
+
+/* Hero solutions card: highlight one item at a time */
+(function () {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  Array.prototype.forEach.call(document.querySelectorAll("[data-x-index]"), function (card) {
+    var items = card.querySelectorAll("li");
+    if (!items.length) return;
+    var n = -1;
+    setTimeout(function tick() {
+      if (!document.hidden) {
+        if (n >= 0) items[n].classList.remove("is-on");
+        n = (n + 1) % items.length;
+        items[n].classList.add("is-on");
+      }
+      setTimeout(tick, 1600);
+    }, 1800);
+  });
 })();

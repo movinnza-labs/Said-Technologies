@@ -482,6 +482,23 @@
       });
     }, { rootMargin: "0px 0px -10% 0px" });
     Array.prototype.forEach.call(els, function (el) { io.observe(el); });
+
+    // Safety net: on slow devices or fast scrolling the observer can miss an element;
+    // anything that has reached the viewport (or been scrolled past) is shown.
+    var pending = Array.prototype.slice.call(els), queued = false;
+    var sweep = function () {
+      queued = false;
+      var limit = window.innerHeight * 0.95;
+      pending = pending.filter(function (el) {
+        if (el.classList.contains("is-visible")) return false;
+        if (el.getBoundingClientRect().top < limit) { el.classList.add("is-visible"); io.unobserve(el); return false; }
+        return true;
+      });
+      if (!pending.length) window.removeEventListener("scroll", onScroll);
+    };
+    var onScroll = function () { if (!queued) { queued = true; requestAnimationFrame(sweep); } };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("load", sweep);
   }
 
   /* ---------- Count-up for portfolio facts ---------- */

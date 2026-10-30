@@ -2,14 +2,14 @@ import Script from 'next/script'
 import type { ReactNode } from 'react'
 
 import { getHome, type HomeId } from '@/lib/content'
-import { FONTS_EDITORIAL, FONTS_IMMERSIVE, FONTS_JAKARTA, FONTS_SORA } from '@/lib/site'
+import { FONTS_JAKARTA, FONTS_SORA } from '@/lib/site'
 
 const FONTS: Record<HomeId, string> = {
   v1: FONTS_JAKARTA,
   v2: FONTS_SORA,
   v3: FONTS_SORA,
-  v4: FONTS_EDITORIAL,
-  v5: FONTS_IMMERSIVE,
+  v4: FONTS_JAKARTA,
+  v5: FONTS_JAKARTA,
 }
 const SCRIPTS: Record<HomeId, string[]> = {
   v1: ['/assets/js/theme.js'],

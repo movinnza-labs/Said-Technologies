@@ -58,26 +58,53 @@
         <p class="e-aside hero-in" style="--d:5">Have a requirement in mind? <a class="e-link" href="/contact#enquiry-form">Discuss Your Requirement <span class="arrow" aria-hidden="true">→</span></a></p>
       </div>
 
-      <div class="e-hero-visual hero-in" style="--d:2" role="group" aria-label="Enterprise technology and education solutions connected through SAID Technologies">
-        <figure class="e-frame e-frame--main"><img src="/assets/img/hero-team.jpg" width="1100" height="1200" alt="" fetchpriority="high"></figure>
-        <figure class="e-frame e-frame--inset"><img src="/assets/img/hero-datacentre.jpg" width="1200" height="1000" alt="" loading="lazy"></figure>
-        <div class="e-index" data-e-index>
-          <img class="e-index-logo" src="/assets/img/said-logo-transparent.png" width="482" height="183" alt="">
-          <p class="e-index-label"><span class="e-dot e-dot--ent" aria-hidden="true"></span>Enterprise technology</p>
-          <ul class="e-index-list">
-            <li><span class="e-index-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01"/></svg></span>Infrastructure</li>
-            <li><span class="e-index-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18h10a4 4 0 0 0 .6-7.95A6 6 0 0 0 6.1 9.5 4.25 4.25 0 0 0 7 18z"/></svg></span>Cloud</li>
-            <li><span class="e-index-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg></span>Managed Services</li>
-            <li><span class="e-index-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>Data &amp; AI</li>
-            <li><span class="e-index-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>Cybersecurity</li>
-          </ul>
-          <p class="e-index-label"><span class="e-dot e-dot--edu" aria-hidden="true"></span>Education solutions</p>
-          <ul class="e-index-list">
-            <li><span class="e-index-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span>Smart Classrooms</li>
-            <li><span class="e-index-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="8" width="14" height="11" rx="3"/><path d="M12 4v4M9 13h.01M15 13h.01M2 13v2M22 13v2"/></svg></span>Robotics &amp; AI Labs</li>
-            <li><span class="e-index-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8"/></svg></span>Centres of Excellence</li>
-          </ul>
-        </div>
+      <div class="hub-wrap hero-in" style="--d:2">
+              <div class="hub" role="img" aria-label="Enterprise technology and education solutions connected through SAID Technologies">
+                <!-- orbits, spokes and travelling pulses -->
+                <svg class="hub-lines" viewBox="0 0 100 100" aria-hidden="true">
+                  <circle class="orbit o1" cx="50" cy="50" r="42"/>
+                  <circle class="orbit o2" cx="50" cy="50" r="30"/>
+                  <g class="spokes">
+                    <line class="hub-spoke ent" x1="50" y1="50" x2="10.1" y2="37"/>
+                    <line class="hub-spoke ent" x1="50" y1="50" x2="25.3" y2="16"/>
+                    <line class="hub-spoke ent" x1="50" y1="50" x2="50" y2="8"/>
+                    <line class="hub-spoke ent" x1="50" y1="50" x2="74.7" y2="16"/>
+                    <line class="hub-spoke ent" x1="50" y1="50" x2="89.9" y2="37"/>
+                    <line class="hub-spoke edu" x1="50" y1="50" x2="74.7" y2="84"/>
+                    <line class="hub-spoke edu" x1="50" y1="50" x2="50" y2="92"/>
+                    <line class="hub-spoke edu" x1="50" y1="50" x2="25.3" y2="84"/>
+                  </g>
+                </svg>
+      
+                <!-- centre: team photo + brand badge -->
+                <div class="hub-core">
+                  <span class="core-glow" aria-hidden="true"></span>
+                  <div class="core-photo"><img src="/assets/img/hub-core.jpg" width="800" height="800" alt="Smiling team collaborating together at a shared table" fetchpriority="high"></div>
+                  <span class="core-logo"><img src="/assets/img/said-logo-transparent.png" width="482" height="183" alt="SAID Technologies Pvt. Ltd."></span>
+                </div>
+      
+                <!-- travelling pulses (CSS) -->
+                <ul class="hub-pulses" aria-hidden="true">
+                  <li class="ent" style="--x:10.1%;--y:37%;--d:0s"></li><li class="ent" style="--x:25.3%;--y:16%;--d:.35s"></li><li class="ent" style="--x:50%;--y:8%;--d:.7s"></li><li class="ent" style="--x:74.7%;--y:16%;--d:1.05s"></li><li class="ent" style="--x:89.9%;--y:37%;--d:1.4s"></li>
+                  <li class="edu" style="--x:74.7%;--y:84%;--d:1.75s"></li><li class="edu" style="--x:50%;--y:92%;--d:2.1s"></li><li class="edu" style="--x:25.3%;--y:84%;--d:2.45s"></li>
+                </ul>
+      
+                <!-- nodes -->
+                <ul class="hub-nodes" aria-hidden="true">
+                  <li class="hub-node ent" style="--x:10.1%;--y:37%;--i:0"><span class="hn-ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/></svg></span>Infrastructure</li>
+                  <li class="hub-node ent" style="--x:25.3%;--y:16%;--i:1"><span class="hn-ic"><svg viewBox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .6-7.95A6 6 0 0 0 6.1 9.5 4.25 4.25 0 0 0 7 18z"/></svg></span>Cloud</li>
+                  <li class="hub-node ent" style="--x:50%;--y:8%;--i:2"><span class="hn-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg></span>Managed Services</li>
+                  <li class="hub-node ent" style="--x:74.7%;--y:16%;--i:3"><span class="hn-ic"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>Data &amp; AI</li>
+                  <li class="hub-node ent" style="--x:89.9%;--y:37%;--i:4"><span class="hn-ic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>Cybersecurity</li>
+                  <li class="hub-node edu" style="--x:74.7%;--y:84%;--i:5"><span class="hn-ic"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span>Smart Classrooms</li>
+                  <li class="hub-node edu" style="--x:50%;--y:92%;--i:6"><span class="hn-ic"><svg viewBox="0 0 24 24"><rect x="5" y="8" width="14" height="11" rx="3"/><path d="M12 4v4M9 13h.01M15 13h.01M2 13v2M22 13v2"/></svg></span>Robotics &amp; AI Labs</li>
+                  <li class="hub-node edu" style="--x:25.3%;--y:84%;--i:7"><span class="hn-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8"/></svg></span>Centres of Excellence</li>
+                </ul>
+              </div>
+              <ul class="hub-legend" aria-hidden="true">
+                <li class="ent">Enterprise technology</li>
+                <li class="edu">Education solutions</li>
+              </ul>
       </div>
     </div>
   </section>
@@ -125,7 +152,6 @@
       <div class="e-svc" data-e-svc>
         <ol class="e-svc-list">
           <li class="e-svc-row is-on">
-            <span class="e-svc-num">01</span>
             <span class="e-svc-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01"/></svg></span>
             <div class="e-svc-text">
               <h3 class="e-svc-title">Infrastructure Solutions</h3>
@@ -134,7 +160,6 @@
             <a class="e-svc-more e-stretch" href="/what-we-do/infrastructure-solutions">Learn more<span class="sr-only"> about Infrastructure Solutions</span> <span class="arrow" aria-hidden="true">→</span></a>
           </li>
           <li class="e-svc-row">
-            <span class="e-svc-num">02</span>
             <span class="e-svc-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18h10a4 4 0 0 0 .6-7.95A6 6 0 0 0 6.1 9.5 4.25 4.25 0 0 0 7 18z"/></svg></span>
             <div class="e-svc-text">
               <h3 class="e-svc-title">Cloud Solutions</h3>
@@ -143,7 +168,6 @@
             <a class="e-svc-more e-stretch" href="/what-we-do/cloud-solutions">Learn more<span class="sr-only"> about Cloud Solutions</span> <span class="arrow" aria-hidden="true">→</span></a>
           </li>
           <li class="e-svc-row">
-            <span class="e-svc-num">03</span>
             <span class="e-svc-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg></span>
             <div class="e-svc-text">
               <h3 class="e-svc-title">Managed Services</h3>
@@ -152,7 +176,6 @@
             <a class="e-svc-more e-stretch" href="/what-we-do/managed-services">Learn more<span class="sr-only"> about Managed Services</span> <span class="arrow" aria-hidden="true">→</span></a>
           </li>
           <li class="e-svc-row">
-            <span class="e-svc-num">04</span>
             <span class="e-svc-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M21.5 20a6.5 6.5 0 0 0-4-6"/></svg></span>
             <div class="e-svc-text">
               <h3 class="e-svc-title">Staffing Solutions</h3>
@@ -161,7 +184,6 @@
             <a class="e-svc-more e-stretch" href="/what-we-do/staffing-solutions">Learn more<span class="sr-only"> about Staffing Solutions</span> <span class="arrow" aria-hidden="true">→</span></a>
           </li>
           <li class="e-svc-row">
-            <span class="e-svc-num">05</span>
             <span class="e-svc-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></span>
             <div class="e-svc-text">
               <h3 class="e-svc-title">Annual Maintenance Contract</h3>
@@ -170,7 +192,6 @@
             <a class="e-svc-more e-stretch" href="/what-we-do/annual-maintenance-contract">Learn more<span class="sr-only"> about Annual Maintenance Contract</span> <span class="arrow" aria-hidden="true">→</span></a>
           </li>
           <li class="e-svc-row">
-            <span class="e-svc-num">06</span>
             <span class="e-svc-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
             <div class="e-svc-text">
               <h3 class="e-svc-title">Data &amp; AI</h3>
@@ -179,7 +200,6 @@
             <a class="e-svc-more e-stretch" href="/what-we-do/data-and-ai">Learn more<span class="sr-only"> about Data &amp; AI</span> <span class="arrow" aria-hidden="true">→</span></a>
           </li>
           <li class="e-svc-row">
-            <span class="e-svc-num">07</span>
             <span class="e-svc-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
             <div class="e-svc-text">
               <h3 class="e-svc-title">Cybersecurity</h3>
@@ -188,7 +208,6 @@
             <a class="e-svc-more e-stretch" href="/what-we-do/cybersecurity">Learn more<span class="sr-only"> about Cybersecurity</span> <span class="arrow" aria-hidden="true">→</span></a>
           </li>
           <li class="e-svc-row">
-            <span class="e-svc-num">08</span>
             <span class="e-svc-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span>
             <div class="e-svc-text">
               <h3 class="e-svc-title">Google Workspace</h3>
@@ -197,7 +216,6 @@
             <a class="e-svc-more e-stretch" href="/what-we-do/google-workspace">Learn more<span class="sr-only"> about Google Workspace</span> <span class="arrow" aria-hidden="true">→</span></a>
           </li>
           <li class="e-svc-row">
-            <span class="e-svc-num">09</span>
             <span class="e-svc-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9V3h12v6"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M6 14h12v7H6z"/></svg></span>
             <div class="e-svc-text">
               <h3 class="e-svc-title">Managed Print Services</h3>
@@ -206,7 +224,6 @@
             <a class="e-svc-more e-stretch" href="/what-we-do/managed-print-services">Learn more<span class="sr-only"> about Managed Print Services</span> <span class="arrow" aria-hidden="true">→</span></a>
           </li>
           <li class="e-svc-row">
-            <span class="e-svc-num">10</span>
             <span class="e-svc-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 10 5-10 5L2 7z"/><path d="m2 12 10 5 10-5M2 17l10 5 10-5"/></svg></span>
             <div class="e-svc-text">
               <h3 class="e-svc-title">ERP &amp; Business Applications</h3>
@@ -229,16 +246,16 @@
             <img src="/assets/img/svc-10-erp.jpg" width="1400" height="700" alt="" loading="lazy">
           </div>
           <div class="e-svc-caption">
-            <span class="is-on"><b>01</b>Infrastructure Solutions</span>
-            <span><b>02</b>Cloud Solutions</span>
-            <span><b>03</b>Managed Services</span>
-            <span><b>04</b>Staffing Solutions</span>
-            <span><b>05</b>Annual Maintenance Contract</span>
-            <span><b>06</b>Data &amp; AI</span>
-            <span><b>07</b>Cybersecurity</span>
-            <span><b>08</b>Google Workspace</span>
-            <span><b>09</b>Managed Print Services</span>
-            <span><b>10</b>ERP &amp; Business Applications</span>
+            <span class="is-on">Infrastructure Solutions</span>
+            <span>Cloud Solutions</span>
+            <span>Managed Services</span>
+            <span>Staffing Solutions</span>
+            <span>Annual Maintenance Contract</span>
+            <span>Data &amp; AI</span>
+            <span>Cybersecurity</span>
+            <span>Google Workspace</span>
+            <span>Managed Print Services</span>
+            <span>ERP &amp; Business Applications</span>
           </div>
         </div>
       </div>
@@ -262,7 +279,6 @@
         <li class="e-mag-item e-mag-1 reveal">
           <figure class="e-mag-photo"><img src="/assets/img/ind-gcc.jpg" width="800" height="600" alt="" loading="lazy"></figure>
           <div class="e-mag-body">
-            <span class="e-mag-num" aria-hidden="true">01</span>
             <h3 class="e-mag-title"><a class="e-stretch" href="/industries/global-capability-centres">Global Capability Centres</a></h3>
             <p>Technology for Connected, Distributed Teams</p>
           </div>
@@ -271,7 +287,6 @@
         <li class="e-mag-item e-mag-2 reveal">
           <figure class="e-mag-photo"><img src="/assets/img/ind-pharma.jpg" width="800" height="600" alt="" loading="lazy"></figure>
           <div class="e-mag-body">
-            <span class="e-mag-num" aria-hidden="true">02</span>
             <h3 class="e-mag-title"><a class="e-stretch" href="/industries/pharma-and-healthcare">Pharma &amp; Healthcare</a></h3>
             <p>Technology Around Sensitive Information and Essential Workflows</p>
           </div>
@@ -280,7 +295,6 @@
         <li class="e-mag-item e-mag-3 reveal">
           <figure class="e-mag-photo"><img src="/assets/img/ind-bfsi.jpg" width="800" height="600" alt="" loading="lazy"></figure>
           <div class="e-mag-body">
-            <span class="e-mag-num" aria-hidden="true">03</span>
             <h3 class="e-mag-title"><a class="e-stretch" href="/industries/bfsi-nbfc">BFSI / NBFC</a></h3>
             <p>Plan for Trust, Continuity and Accountability</p>
           </div>
@@ -289,7 +303,6 @@
         <li class="e-mag-item e-mag-4 reveal">
           <figure class="e-mag-photo"><img src="/assets/img/ind-manufacturing.jpg" width="800" height="600" alt="" loading="lazy"></figure>
           <div class="e-mag-body">
-            <span class="e-mag-num" aria-hidden="true">04</span>
             <h3 class="e-mag-title"><a class="e-stretch" href="/industries/manufacturing">Manufacturing</a></h3>
             <p>Connect Enterprise Technology With Operational Needs</p>
           </div>
@@ -298,7 +311,6 @@
         <li class="e-mag-item e-mag-5 reveal">
           <figure class="e-mag-photo"><img src="/assets/img/ind-automobile.jpg" width="800" height="600" alt="" loading="lazy"></figure>
           <div class="e-mag-body">
-            <span class="e-mag-num" aria-hidden="true">05</span>
             <h3 class="e-mag-title"><a class="e-stretch" href="/industries/automobile">Automobile</a></h3>
             <p>Support Engineering, Production and Business Workflows</p>
           </div>
@@ -307,7 +319,6 @@
         <li class="e-mag-item e-mag-6 reveal">
           <figure class="e-mag-photo"><img src="/assets/img/ind-retail.jpg" width="800" height="600" alt="" loading="lazy"></figure>
           <div class="e-mag-body">
-            <span class="e-mag-num" aria-hidden="true">06</span>
             <h3 class="e-mag-title"><a class="e-stretch" href="/industries/retail">Retail</a></h3>
             <p>Create Consistency Across Business Locations</p>
           </div>
@@ -316,7 +327,6 @@
         <li class="e-mag-item e-mag-7 reveal">
           <figure class="e-mag-photo"><img src="/assets/img/ind-it.jpg" width="800" height="600" alt="" loading="lazy"></figure>
           <div class="e-mag-body">
-            <span class="e-mag-num" aria-hidden="true">07</span>
             <h3 class="e-mag-title"><a class="e-stretch" href="/industries/it-ites">IT / ITES</a></h3>
             <p>Equip Teams for Dependable Digital Delivery</p>
           </div>
@@ -325,7 +335,6 @@
         <li class="e-mag-item e-mag-8 reveal">
           <figure class="e-mag-photo"><img src="/assets/img/ind-media.jpg" width="800" height="600" alt="" loading="lazy"></figure>
           <div class="e-mag-body">
-            <span class="e-mag-num" aria-hidden="true">08</span>
             <h3 class="e-mag-title"><a class="e-stretch" href="/industries/media">Media</a></h3>
             <p>Plan Infrastructure for Demanding Content Workflows</p>
           </div>
@@ -334,7 +343,6 @@
         <li class="e-mag-item e-mag-9 reveal">
           <figure class="e-mag-photo"><img src="/assets/img/ind-startups.jpg" width="800" height="600" alt="" loading="lazy"></figure>
           <div class="e-mag-body">
-            <span class="e-mag-num" aria-hidden="true">09</span>
             <h3 class="e-mag-title"><a class="e-stretch" href="/industries/startups">Startups</a></h3>
             <p>Build a Foundation That Can Grow With Your Business</p>
           </div>
@@ -343,7 +351,6 @@
         <li class="e-mag-item e-mag-10 reveal">
           <figure class="e-mag-photo"><img src="/assets/img/card-campus.jpg" width="720" height="540" alt="" loading="lazy"></figure>
           <div class="e-mag-body">
-            <span class="e-mag-num" aria-hidden="true">10</span>
             <h3 class="e-mag-title"><a class="e-stretch" href="/industries/real-estate-and-infrastructure">Real Estate &amp; Infrastructure</a></h3>
             <p>Technology for Project Sites, Offices and Property Operations</p>
           </div>
@@ -370,7 +377,6 @@
       <ul class="e-acc" data-e-acc>
         <li class="e-acc-item is-on">
           <img src="/assets/img/edu-school.jpg" width="800" height="600" alt="" loading="lazy">
-          <span class="e-acc-num" aria-hidden="true">01</span>
           <span class="e-acc-spine" aria-hidden="true">School Education</span>
           <div class="e-acc-body">
             <h3 class="e-acc-title">School Education</h3>
@@ -380,7 +386,6 @@
         </li>
         <li class="e-acc-item">
           <img src="/assets/img/edu-higher.jpg" width="800" height="600" alt="" loading="lazy">
-          <span class="e-acc-num" aria-hidden="true">02</span>
           <span class="e-acc-spine" aria-hidden="true">Higher Education</span>
           <div class="e-acc-body">
             <h3 class="e-acc-title">Higher Education</h3>
@@ -390,7 +395,6 @@
         </li>
         <li class="e-acc-item">
           <img src="/assets/img/card-lab.jpg" width="720" height="540" alt="" loading="lazy">
-          <span class="e-acc-num" aria-hidden="true">03</span>
           <span class="e-acc-spine" aria-hidden="true">Centre of Excellence</span>
           <div class="e-acc-body">
             <h3 class="e-acc-title">Centre of Excellence</h3>
@@ -400,7 +404,6 @@
         </li>
         <li class="e-acc-item">
           <img src="/assets/img/edu-digital.jpg" width="800" height="600" alt="" loading="lazy">
-          <span class="e-acc-num" aria-hidden="true">04</span>
           <span class="e-acc-spine" aria-hidden="true">Digital Education Solutions</span>
           <div class="e-acc-body">
             <h3 class="e-acc-title">Digital Education Solutions</h3>
@@ -410,7 +413,6 @@
         </li>
         <li class="e-acc-item">
           <img src="/assets/img/edu-csr.jpg" width="800" height="600" alt="" loading="lazy">
-          <span class="e-acc-num" aria-hidden="true">05</span>
           <span class="e-acc-spine" aria-hidden="true">CSR Education Solutions</span>
           <div class="e-acc-body">
             <h3 class="e-acc-title">CSR Education Solutions</h3>
@@ -434,23 +436,17 @@
       </div>
       <ol class="e-steps reveal">
         <li class="e-step">
-          <span class="e-step-big" aria-hidden="true">01</span>
           <span class="e-step-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></span>
-          <p class="e-step-label">Step 01</p>
           <h3 class="e-step-title">Understand</h3>
           <p>Identify users, existing infrastructure, operational challenges and intended outcomes.</p>
         </li>
         <li class="e-step">
-          <span class="e-step-big" aria-hidden="true">02</span>
           <span class="e-step-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></span>
-          <p class="e-step-label">Step 02</p>
           <h3 class="e-step-title">Plan</h3>
           <p>Define the technical scope, equipment, integrations, responsibilities and commercial requirements.</p>
         </li>
         <li class="e-step">
-          <span class="e-step-big" aria-hidden="true">03</span>
           <span class="e-step-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.8.7-2.1-.1-2.9a2.2 2.2 0 0 0-2.9-.1z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.9A12.9 12.9 0 0 1 22 2c0 2.7-.8 7.5-6 11a22.4 22.4 0 0 1-4 2z"/><path d="M9 12H4s.6-3 2-4c1.6-1.1 5 0 5 0M12 15v5s3-.6 4-2c1.1-1.6 0-5 0-5"/></svg></span>
-          <p class="e-step-label">Step 03</p>
           <h3 class="e-step-title">Enable</h3>
           <p>Prepare for deployment, user orientation, documentation and agreed support arrangements.</p>
         </li>

@@ -1400,3 +1400,8 @@ button { font: inherit; color: inherit; }
   .industry-grid > li:last-child:nth-child(3n+1) { grid-column: 1 / -1; aspect-ratio: 32 / 9; }
   .industry-grid > li:last-child:nth-child(3n+1) > img { object-position: 50% 40%; }
 }
+
+/* cards inside a horizontal rail can sit partly off screen; never leave them blank */
+.js .edu-scroll > .reveal { opacity: 1; transform: none; }
+/* decorative glows must never widen the page on small screens */
+main { overflow-x: clip; }
