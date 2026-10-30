@@ -5,12 +5,16 @@ import { getPayload } from 'payload'
 
 import type { CaseStudy, Media, Post } from '@/payload-types'
 
+// Without DATABASE_URL the site runs as a preview: pages work, CMS content falls back to the approved text.
+export const cmsEnabled = () => Boolean(process.env.DATABASE_URL)
+
 export const cms = () => getPayload({ config })
 
 const published = { _status: { equals: 'published' as const } }
 
 // Content pages must still render when the database is unreachable, so failures return empty results.
 async function safe<T>(label: string, fn: () => Promise<T>, fallback: T): Promise<T> {
+  if (!cmsEnabled()) return fallback
   try {
     return await fn()
   } catch (err) {

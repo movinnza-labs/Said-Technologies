@@ -28,7 +28,8 @@ export default buildConfig({
   },
   collections: [Posts, CaseStudies, Media, Enquiries, CareerApplications, Resumes, Users],
   editor: lexicalEditor(),
-  secret: process.env.PAYLOAD_SECRET || '',
+  // preview builds without a database have no secret; a real one is required once DATABASE_URL is set
+  secret: process.env.PAYLOAD_SECRET || (process.env.DATABASE_URL ? '' : 'preview-without-database'),
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
   },

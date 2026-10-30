@@ -1,4 +1,4 @@
-import { cms } from '@/lib/cms'
+import { cms, cmsEnabled } from '@/lib/cms'
 import { fail, isBot, isEmail, ok, rateLimited, text } from '@/lib/forms'
 
 const MAX_BYTES = 5 * 1024 * 1024
@@ -9,6 +9,7 @@ const ALLOWED = new Map([
 ])
 
 export async function POST(req: Request) {
+  if (!cmsEnabled()) return fail('This form is not connected yet (website preview). Please contact SAID Technologies by email or phone.', 503)
   if (rateLimited(req, 'career', 3)) return fail('Too many applications from this connection. Please try again later.', 429)
 
   const form = await req.formData().catch(() => null)

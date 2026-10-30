@@ -1,7 +1,8 @@
-import { cms } from '@/lib/cms'
+import { cms, cmsEnabled } from '@/lib/cms'
 import { fail, isBot, isEmail, ok, rateLimited, text } from '@/lib/forms'
 
 export async function POST(req: Request) {
+  if (!cmsEnabled()) return fail('This form is not connected yet (website preview). Please contact SAID Technologies by email or phone.', 503)
   if (rateLimited(req, 'enquiry')) return fail('Too many enquiries from this connection. Please try again later.', 429)
 
   const form = await req.formData().catch(() => null)
