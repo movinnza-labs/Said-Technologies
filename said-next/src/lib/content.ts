@@ -7,7 +7,7 @@ import path from 'node:path'
 const CONTENT_DIR = path.join(process.cwd(), 'content')
 
 export type PageEntry = { route: string; file: string; title: string; description: string }
-export type HomeId = 'v1' | 'v2' | 'v3'
+export type HomeId = 'v1' | 'v2' | 'v3' | 'v4' | 'v5'
 export type HomeEntry = { route: string; title: string; description: string; htmlClass: string }
 
 const read = (...parts: string[]) => fs.readFileSync(path.join(CONTENT_DIR, ...parts), 'utf8')

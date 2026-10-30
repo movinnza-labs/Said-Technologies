@@ -61,6 +61,16 @@ const rewrite = (html, fileDir) =>
 const pick = (html, re) => (html.match(re) || [])[1] || ''
 const decode = (s) => s.replace(/&amp;/g, '&').replace(/&#x27;|&#39;/g, "'").replace(/&quot;/g, '"')
 
+// Home designs built directly in Next.js (not in the static site) survive a re-import.
+const KEEP_HOMES = ['v4', 'v5']
+const keptHomes = {}
+for (const id of KEEP_HOMES) {
+  const file = path.join(out, 'home', `${id}.html`)
+  if (!fs.existsSync(file)) continue
+  const manifest = JSON.parse(fs.readFileSync(path.join(out, 'home', 'manifest.json'), 'utf8'))
+  keptHomes[id] = { html: fs.readFileSync(file, 'utf8'), meta: manifest[id] }
+}
+
 fs.rmSync(out, { recursive: true, force: true })
 fs.mkdirSync(path.join(out, 'pages'), { recursive: true })
 fs.mkdirSync(path.join(out, 'partials'), { recursive: true })
@@ -111,6 +121,10 @@ if (rootPage) {
 
 pages.sort((a, b) => a.route.localeCompare(b.route))
 fs.writeFileSync(path.join(out, 'pages', 'manifest.json'), JSON.stringify(pages, null, 2))
+for (const [id, kept] of Object.entries(keptHomes)) {
+  fs.writeFileSync(path.join(out, 'home', `${id}.html`), kept.html)
+  homes[id] = kept.meta
+}
 fs.writeFileSync(path.join(out, 'home', 'manifest.json'), JSON.stringify(homes, null, 2))
 fs.writeFileSync(path.join(out, 'partials', 'header.html'), header)
 fs.writeFileSync(path.join(out, 'partials', 'footer.html'), footer)

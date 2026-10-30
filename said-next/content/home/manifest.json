@@ -16,5 +16,17 @@
     "description": "SAID Technologies Pvt. Ltd. connects enterprise technology requirements with practical solution planning across IT infrastructure, cloud, managed services,…",
     "htmlClass": "theme-ember theme-nova",
     "route": "/design/v3"
+  },
+  "v4": {
+    "title": "SAID Technologies Pvt. Ltd. | Creating Possibilities. Delivering Solutions.",
+    "description": "SAID Technologies Pvt. Ltd. connects enterprise technology requirements with practical solution planning across IT infrastructure, cloud, managed services,…",
+    "htmlClass": "theme-v4",
+    "route": "/design/v4"
+  },
+  "v5": {
+    "title": "SAID Technologies Pvt. Ltd. | Creating Possibilities. Delivering Solutions.",
+    "description": "SAID Technologies Pvt. Ltd. connects enterprise technology requirements with practical solution planning across IT infrastructure, cloud, managed services,…",
+    "htmlClass": "theme-v5",
+    "route": "/design/v5"
   }
 }
