@@ -7,6 +7,8 @@ const __filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(__filename)
 
 const nextConfig: NextConfig = {
+  // One build worker keeps memory low on shared hosting (Hostinger Node.js apps).
+  experimental: { cpus: 1, webpackMemoryOptimizations: true },
   // Old static addresses (…/index.html, /said-html/…, index-v1.html) keep working.
   async redirects() {
     return [
