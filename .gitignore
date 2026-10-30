@@ -22,3 +22,6 @@ node_modules/
 _backup*/
 _shot.html
 !.env.example
+
+# Static HTML export: kept locally as the content source for said-next, not stored in git
+said-html/
