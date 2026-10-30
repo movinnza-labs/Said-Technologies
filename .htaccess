@@ -1,0 +1,10 @@
+DirectoryIndex index.html
+Options -Indexes
+
+# Internal project documents are not part of the public site
+<FilesMatch "\.(md|txt)$">
+  Require all denied
+</FilesMatch>
+<Files "robots.txt">
+  Require all granted
+</Files>
