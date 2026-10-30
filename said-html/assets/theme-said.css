@@ -1,0 +1,318 @@
+/* SAID Technologies — brand theme (index-v1).
+   Colours come from the official logo: navy #123360 and yellow #EFBB29.
+   Loaded after theme.css; every rule is scoped to .theme-said so other pages are unaffected.
+   Yellow is an accent only: buttons and marks on navy, never body text on white. */
+
+:root.theme-said {
+  --ink-950: #061329; --ink-900: #0b1f42; --ink-800: #123360; --ink-700: #284673; --ink-600: #45608a;
+  --brand-50: #edf2f9; --brand-100: #d9e3f1; --brand-200: #b3c7e3; --brand-300: #9dbce6;
+  --brand-500: #2e64b0; --brand-600: #1d4f91; --brand-700: #123360; --brand-800: #0f2a50;
+  --ink950-rgb: 6, 19, 41; --ink900-rgb: 11, 31, 66;
+  --b300-rgb: 157, 188, 230; --b500-rgb: 46, 100, 176; --b600-rgb: 29, 79, 145; --b700-rgb: 18, 51, 96;
+  --gold: #efbb29; --gold-300: #f7d36e; --gold-600: #c99410; --gold-rgb: 239, 187, 41;
+  --surface-alt: #f4f7fc; --border: #e1e8f2;
+  --on-dark-text: #c6d3ea; --on-dark-strong: #e8eef9;
+  --hero-accent: var(--gold);
+  --radius: 14px; --radius-lg: 20px;
+  --shadow: 0 10px 30px rgba(var(--ink900-rgb), .09);
+  --shadow-lift: 0 22px 50px rgba(var(--ink900-rgb), .16);
+}
+
+/* ---------- Typography accents ---------- */
+.theme-said .eyebrow { display: inline-flex; align-items: center; gap: 10px; }
+.theme-said .eyebrow::before { content: ""; width: 22px; height: 3px; border-radius: 3px; background: var(--gold); }
+.theme-said .hero .badge::before { content: none; }
+.theme-said .section-head .h2::after,
+.theme-said .showcase .h2::after,
+.theme-said .faq-grid .h2::after {
+  content: ""; display: block; width: 56px; height: 4px; margin-top: 16px; border-radius: 4px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-300));
+}
+
+/* ---------- Buttons ---------- */
+.theme-said .btn { border-radius: 999px; font-weight: 700; transition: background-color .2s var(--ease), color .2s var(--ease), border-color .2s var(--ease), transform .2s var(--ease), box-shadow .2s var(--ease); }
+.theme-said .btn:hover { transform: translateY(-2px); }
+.theme-said .btn-primary { background: var(--ink-800); color: #fff; box-shadow: 0 8px 20px rgba(var(--b700-rgb), .25); }
+.theme-said .btn-primary:hover { background: var(--brand-600); color: #fff; box-shadow: 0 12px 28px rgba(var(--b700-rgb), .32); }
+.theme-said .btn-secondary { border-color: var(--ink-800); color: var(--ink-800); }
+.theme-said .on-dark .btn-primary,
+.theme-said .section-dark .btn-primary,
+.theme-said.header-overlay .header-cta { background: var(--gold); color: var(--ink-950); box-shadow: 0 10px 30px rgba(var(--gold-rgb), .28); }
+.theme-said .on-dark .btn-primary:hover,
+.theme-said .section-dark .btn-primary:hover { background: var(--gold-300); color: var(--ink-950); box-shadow: 0 14px 36px rgba(var(--gold-rgb), .4); }
+.theme-said .on-dark .btn-secondary,
+.theme-said .section-dark .btn-secondary { background: rgba(255,255,255,.04); color: #fff; border-color: rgba(255,255,255,.35); }
+.theme-said .on-dark .btn-secondary:hover,
+.theme-said .section-dark .btn-secondary:hover { background: rgba(255,255,255,.1); border-color: var(--gold); color: #fff; }
+.theme-said .on-dark .text-link, .theme-said .section-dark .text-link { color: var(--gold); }
+.theme-said .on-dark .text-link:hover, .theme-said .section-dark .text-link:hover { color: var(--gold-300); }
+.theme-said .header-cta { border-radius: 999px; }
+.theme-said.header-overlay .site-header:not(.is-scrolled):not(:has(.nav-item.is-open)) .header-cta { background: var(--gold); color: var(--ink-950); }
+.theme-said.header-overlay .site-header:not(.is-scrolled):not(:has(.nav-item.is-open)) .nav-link::after { background: var(--gold); }
+.theme-said .nav-link::after { background: var(--gold); }
+.theme-said .scroll-progress span { background: linear-gradient(90deg, var(--gold), var(--gold-300)); }
+
+/* ---------- Hero ---------- */
+.theme-said .hero-dark { background: radial-gradient(120% 90% at 0% 0%, #12306a 0%, var(--ink-950) 55%); overflow: hidden; }
+.theme-said .hero-dark::before {
+  background:
+    linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px) 0 0 / 56px 56px,
+    linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px) 0 0 / 56px 56px;
+  -webkit-mask-image: radial-gradient(80% 80% at 60% 40%, #000 30%, transparent 85%);
+          mask-image: radial-gradient(80% 80% at 60% 40%, #000 30%, transparent 85%);
+}
+/* drifting glows: radial gradients moved with transform only */
+.theme-said .hero-dark::after {
+  content: ""; position: absolute; inset: -20%; z-index: 0; pointer-events: none;
+  background:
+    radial-gradient(28% 32% at 78% 28%, rgba(var(--gold-rgb), .20), transparent 70%),
+    radial-gradient(34% 40% at 20% 80%, rgba(var(--b500-rgb), .38), transparent 70%),
+    radial-gradient(30% 34% at 90% 85%, rgba(var(--b600-rgb), .30), transparent 70%);
+  animation: saidDrift 18s ease-in-out infinite alternate;
+}
+@keyframes saidDrift { to { transform: translate3d(-4%, 3%, 0) scale(1.06); } }
+
+.theme-said .hero .display { letter-spacing: -0.03em; }
+.theme-said .hero-dark .accent {
+  background: linear-gradient(100deg, var(--gold) 0%, var(--gold-300) 40%, #fff3c4 50%, var(--gold-300) 60%, var(--gold) 100%);
+  background-size: 250% 100%; -webkit-background-clip: text; background-clip: text; color: transparent;
+  animation: saidShine 6s linear infinite;
+}
+@keyframes saidShine { from { background-position: 100% 0; } to { background-position: -150% 0; } }
+.theme-said .badge { background: rgba(var(--gold-rgb), .1); border-color: rgba(var(--gold-rgb), .35); color: #fff; }
+.theme-said .badge-dot { background: var(--gold); box-shadow: 0 0 0 4px rgba(var(--gold-rgb), .2); animation: saidPing 2.4s ease-out infinite; }
+@keyframes saidPing { 0% { box-shadow: 0 0 0 0 rgba(var(--gold-rgb), .55); } 80%, 100% { box-shadow: 0 0 0 10px rgba(var(--gold-rgb), 0); } }
+
+/* photo frame with a turning gold-and-blue ring */
+.theme-said .stage-ring { inset: -2% 2%; filter: none; border-radius: 34px;
+  background: conic-gradient(from var(--said-a, 0deg), rgba(var(--gold-rgb), .0), rgba(var(--gold-rgb), .9), rgba(var(--b500-rgb), .9), rgba(var(--gold-rgb), .0) 70%);
+  animation: saidSpin 8s linear infinite; opacity: .9;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor;
+          mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+  padding: 2px; top: 22px; bottom: 22px; left: 6px; right: 6px;
+}
+@property --said-a { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
+@keyframes saidSpin { to { --said-a: 360deg; } }
+.theme-said .stage-img { border-radius: 32px; border-color: rgba(255,255,255,.18); box-shadow: 0 40px 90px rgba(0,0,0,.5), 0 0 0 8px rgba(255,255,255,.03); }
+.theme-said .stage-img::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 55%, rgba(var(--ink950-rgb), .55)); pointer-events: none; }
+.theme-said .chip { background: rgba(255,255,255,.92); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,.7); border-radius: 16px; }
+.theme-said .chip-ic { background: linear-gradient(135deg, var(--ink-800), var(--brand-500)); color: #fff; }
+.theme-said .c2 .chip-ic, .theme-said .c4 .chip-ic { background: linear-gradient(135deg, var(--gold-600), var(--gold)); color: var(--ink-950); }
+
+/* ---------- Running solutions band ---------- */
+.theme-said .ticker { background: var(--gold); color: var(--ink-950); padding: 16px 0; position: relative; }
+.theme-said .ticker li { font-size: 16px; font-weight: 700; }
+.theme-said .ticker li::after { width: 8px; height: 8px; background: var(--ink-800); transform: rotate(45deg); border-radius: 1px; }
+.theme-said .ticker-track { animation-duration: 45s; }
+
+/* ---------- Portfolio facts ---------- */
+.theme-said .trust { background: #fff; padding: 64px 0 56px; }
+.theme-said .facts-grid li {
+  border-left: 0; padding: 26px 24px; border-radius: var(--radius-lg); background: linear-gradient(180deg, #fff, var(--surface-alt));
+  border: 1px solid var(--border); position: relative; overflow: hidden; transition: transform .25s var(--ease), box-shadow .25s var(--ease);
+}
+.theme-said .facts-grid li::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: linear-gradient(180deg, var(--gold), var(--brand-600)); }
+.theme-said .facts-grid li:hover { transform: translateY(-4px); box-shadow: var(--shadow-lift); }
+.theme-said .fact-num { background: linear-gradient(135deg, var(--ink-800), var(--brand-500)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.theme-said .platforms a:hover { border-color: var(--gold); color: var(--ink-800); box-shadow: 0 8px 20px rgba(var(--gold-rgb), .18); }
+
+/* ---------- About ---------- */
+.theme-said .vm li { background: #fff; border-color: var(--border); box-shadow: var(--shadow); transition: transform .25s var(--ease), border-color .25s var(--ease); }
+.theme-said .vm li:hover { transform: translateX(6px); border-color: rgba(var(--gold-rgb), .7); }
+.theme-said .vm-ic, .theme-said .value-ic { color: #fff; background: linear-gradient(135deg, var(--ink-800), var(--brand-500)); box-shadow: 0 8px 18px rgba(var(--b700-rgb), .25); }
+.theme-said .about-media .media { border-radius: 24px; box-shadow: var(--shadow-lift); }
+.theme-said .about-media::before { content: ""; position: absolute; width: 120px; height: 120px; right: -18px; top: -18px; border-radius: 24px; background: radial-gradient(rgba(var(--gold-rgb), .9) 2px, transparent 2.5px) 0 0 / 14px 14px; z-index: -1; }
+.theme-said .about-media { position: relative; isolation: isolate; }
+.theme-said .about-tag { border-left: 4px solid var(--gold); }
+
+/* ---------- Services (dark) ---------- */
+.theme-said .services-dark { background: linear-gradient(180deg, var(--ink-950), #0a1c3d); }
+.theme-said .services-dark::before {
+  background: radial-gradient(45% 50% at 0% 0%, rgba(var(--b500-rgb), .32), transparent 70%), radial-gradient(35% 45% at 100% 100%, rgba(var(--gold-rgb), .12), transparent 70%);
+}
+.theme-said .card.spot { border-radius: var(--radius-lg); background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02)); transition: transform .3s var(--ease), border-color .3s var(--ease), box-shadow .3s var(--ease); }
+.theme-said .card.spot::before { background: radial-gradient(320px circle at var(--mx, 50%) var(--my, 50%), rgba(var(--gold-rgb), .14), transparent 60%); }
+.theme-said .card.spot::after { content: ""; position: absolute; left: 24px; right: 24px; bottom: 0; height: 3px; border-radius: 3px 3px 0 0; background: linear-gradient(90deg, var(--gold), var(--gold-300)); transform: scaleX(0); transform-origin: left; transition: transform .35s var(--ease); }
+.theme-said .card.spot:hover { transform: translateY(-6px); border-color: rgba(var(--gold-rgb), .45); }
+.theme-said .card.spot:hover::after { transform: scaleX(1); }
+.theme-said .card.spot .num { color: var(--gold); }
+.theme-said .card.spot .text-link { color: var(--gold); }
+.theme-said .icon { background: rgba(var(--b300-rgb), .12); color: #fff; border: 1px solid rgba(255,255,255,.1); }
+.theme-said .card.spot:hover .icon { background: var(--gold); color: var(--ink-950); border-color: var(--gold); }
+.theme-said .loop-tile { border-radius: var(--radius-lg); }
+.theme-said .loop-bar span::after { background: var(--gold); }
+
+/* ---------- Education showcase + cards ---------- */
+.theme-said .showcase { background: linear-gradient(180deg, #fff 0%, var(--surface-alt) 100%); }
+.theme-said .showcase-media .media { border-radius: 24px; }
+.theme-said .showcase-inset { border: 6px solid #fff; border-radius: 22px; box-shadow: var(--shadow-lift); }
+.theme-said .checks li::before { background: var(--gold); }
+.theme-said .checks li::after { border-color: var(--ink-950); }
+.theme-said .photo-card { border-radius: var(--radius-lg); overflow: hidden; transition: transform .3s var(--ease), box-shadow .3s var(--ease); }
+.theme-said .photo-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lift); }
+.theme-said .photo-card img { transition: transform .6s var(--ease); }
+.theme-said .photo-card:hover img { transform: scale(1.06); }
+.theme-said .photo-card .num { background: var(--gold); color: var(--ink-950); }
+.theme-said .rail-btn:hover { background: var(--ink-800); color: #fff; border-color: var(--ink-800); }
+
+/* ---------- Core values ---------- */
+.theme-said .values { gap: 20px; border: 0; background: none; }
+.theme-said .value { border: 1px solid var(--border) !important; border-radius: var(--radius-lg); background: #fff; transition: transform .3s var(--ease), box-shadow .3s var(--ease), border-color .3s var(--ease); position: relative; overflow: hidden; }
+.theme-said .value::before { content: ""; position: absolute; inset: auto -40% -60% auto; width: 180px; height: 180px; border-radius: 50%; background: radial-gradient(rgba(var(--gold-rgb), .18), transparent 70%); opacity: 0; transition: opacity .3s var(--ease); }
+.theme-said .value:hover { transform: translateY(-6px); box-shadow: var(--shadow-lift); border-color: rgba(var(--gold-rgb), .6) !important; }
+.theme-said .value:hover::before { opacity: 1; }
+.theme-said .value:hover .value-ic { background: linear-gradient(135deg, var(--gold-600), var(--gold)); color: var(--ink-950); }
+
+/* ---------- Approach timeline ---------- */
+.theme-said .process { background: radial-gradient(90% 120% at 100% 0%, #12306a 0%, var(--ink-950) 60%); }
+.theme-said .process::before { background: radial-gradient(35% 50% at 10% 100%, rgba(var(--gold-rgb), .12), transparent 70%); }
+.theme-said .tl-ic { background: linear-gradient(135deg, var(--gold-600), var(--gold)); color: var(--ink-950); box-shadow: 0 0 0 6px rgba(var(--gold-rgb), .16), 0 12px 30px rgba(var(--gold-rgb), .25); border-radius: 18px; transition: transform .3s var(--ease); }
+.theme-said .tl:hover .tl-ic { transform: translateY(-4px) rotate(-6deg); }
+.theme-said .tl-step { color: var(--gold); }
+@media (min-width: 64rem) {
+  .theme-said .timeline.steps-line::after { background: linear-gradient(90deg, var(--gold), var(--gold-300)); }
+  .theme-said .tl:not(:last-child)::after { border-color: var(--gold); }
+}
+
+/* ---------- Industries ---------- */
+.theme-said .industry-tile { border-radius: var(--radius-lg); }
+.theme-said .industry-tile:hover::before { background: linear-gradient(180deg, rgba(var(--b700-rgb), .2) 0%, rgba(var(--ink950-rgb), .94) 100%); }
+.theme-said .industry-tile .h3 { transition: transform .3s var(--ease); }
+.theme-said .industry-tile:hover .h3 { transform: translateY(-4px); }
+.theme-said .industry-tile:hover .industry-go { background: var(--gold); color: var(--ink-950); }
+.theme-said .industry-body::before { content: ""; display: block; width: 0; height: 3px; margin-bottom: 12px; border-radius: 3px; background: var(--gold); transition: width .35s var(--ease); }
+.theme-said .industry-tile:hover .industry-body::before { width: 40px; }
+
+/* ---------- Case studies, FAQ ---------- */
+.theme-said .case-feature, .theme-said .quote-card, .theme-said .video-card { border-radius: var(--radius-lg); }
+.theme-said .quote-card { background: linear-gradient(135deg, var(--ink-800), var(--ink-950)); }
+.theme-said .quote-mark { fill: var(--gold); }
+.theme-said .avatar { background: linear-gradient(135deg, var(--gold), var(--brand-600)); }
+.theme-said .video-card .play { background: var(--gold); animation: saidPulse 2.4s ease-out infinite; }
+.theme-said .video-card .play svg { fill: var(--ink-950); }
+@keyframes saidPulse { 0% { box-shadow: 0 0 0 0 rgba(var(--gold-rgb), .55); } 100% { box-shadow: 0 0 0 22px rgba(var(--gold-rgb), 0); } }
+.theme-said .case-steps div { border-left: 3px solid var(--gold); }
+.theme-said .faq details { transition: background-color .2s var(--ease); }
+.theme-said .faq details[open] { background: linear-gradient(90deg, rgba(var(--gold-rgb), .08), transparent 70%); }
+.theme-said .faq details[open] summary::after {
+  background:
+    linear-gradient(var(--ink-950), var(--ink-950)) center / 14px 2.2px no-repeat,
+    linear-gradient(var(--ink-950), var(--ink-950)) center / 2.2px 14px no-repeat,
+    var(--gold);
+}
+.theme-said .faq summary, .theme-said .faq details p { padding-left: 12px; }
+
+/* ---------- Careers + final CTA ---------- */
+.theme-said .careers-banner { border-radius: 28px; }
+.theme-said .careers-banner::after { content: ""; position: absolute; inset: 0; border-radius: inherit; box-shadow: inset 0 0 0 1px rgba(255,255,255,.08); pointer-events: none; }
+.theme-said .cta-final::before { background: linear-gradient(100deg, rgba(var(--ink950-rgb), .96) 0%, rgba(var(--b700-rgb), .88) 60%, rgba(var(--b700-rgb), .7) 100%) !important; }
+.theme-said .cta-final .eyebrow { color: var(--gold); }
+
+/* ---------- Footer ---------- */
+.theme-said .site-footer { position: relative; background: var(--ink-950); }
+.theme-said .site-footer::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 4px; background: linear-gradient(90deg, var(--ink-800), var(--gold) 50%, var(--ink-800)); }
+.theme-said .footer-col h2::after { content: ""; display: block; width: 24px; height: 2px; margin-top: 8px; background: var(--gold); }
+.theme-said .footer-col a:hover { color: var(--gold); }
+
+/* ---------- Motion safety ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .theme-said .hero-dark::after, .theme-said .hero-dark .accent, .theme-said .badge-dot,
+  .theme-said .stage-ring, .theme-said .video-card .play, .theme-said .ticker-track { animation: none !important; }
+  .theme-said .btn:hover, .theme-said .card.spot:hover, .theme-said .photo-card:hover, .theme-said .value:hover, .theme-said .facts-grid li:hover { transform: none; }
+}
+
+/* ---------- Approved home copy additions ---------- */
+.theme-said .hero-text { margin-top: 14px; max-width: 36rem; font-size: 16px; line-height: 1.65; color: var(--on-dark-text); }
+.theme-said .hero-copy .lead + .hero-text { margin-top: 18px; }
+.theme-said .hero-copy .btn-row { margin-top: 28px; }
+.theme-said .edu-intro-text { margin-top: 12px; color: var(--ink-700); }
+@media (min-width: 64rem) { .theme-said .timeline.steps-3 { grid-template-columns: repeat(3, 1fr); gap: 48px; } }
+
+/* blogs + case studies */
+.theme-said .insights-sub h3 { display: inline-flex; align-items: center; gap: 10px; }
+.theme-said .insights-sub h3::before { content: ""; width: 10px; height: 10px; border-radius: 3px; background: var(--gold); transform: rotate(45deg); }
+.theme-said .post-card { border-radius: var(--radius-lg); overflow: hidden; transition: transform .3s var(--ease), box-shadow .3s var(--ease), border-color .3s var(--ease); }
+.theme-said .post-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lift); border-color: rgba(var(--gold-rgb), .6); }
+.theme-said .post-card img { transition: transform .6s var(--ease); }
+.theme-said .post-card:hover img { transform: scale(1.06); }
+.theme-said .post-card .tag { background: rgba(var(--gold-rgb), .18); color: var(--ink-800); }
+
+/* =====================================================================
+   Fresh palette for index-v1 (replaces logo navy + yellow).
+   Navy #061329 · royal blue #2563EB · electric blue #3B82F6 · cyan #06B6D4 · purple #7C5CFC · off-white #F7F9FC.
+   The old "gold" accent token now carries cyan; filled accents become blue → cyan gradients with white text.
+   ===================================================================== */
+:root.theme-said {
+  --ink-950: #061329; --ink-900: #0b1a3a; --ink-800: #17284d; --ink-700: #34466b; --ink-600: #5a6a8c;
+  --brand-50: #eff5ff; --brand-100: #dbe8ff; --brand-200: #bfd5ff; --brand-300: #93c5fd;
+  --brand-500: #3b82f6; --brand-600: #2563eb; --brand-700: #1d4ed8; --brand-800: #1e3a8a;
+  --ink950-rgb: 6, 19, 41; --ink900-rgb: 11, 26, 58;
+  --b300-rgb: 147, 197, 253; --b500-rgb: 59, 130, 246; --b600-rgb: 37, 99, 235; --b700-rgb: 29, 78, 216;
+  --gold: #06b6d4; --gold-300: #67e8f9; --gold-600: #2563eb; --gold-rgb: 6, 182, 212;
+  --purple: #7c5cfc; --purple-rgb: 124, 92, 252;
+  --g-fresh: linear-gradient(120deg, #2563eb 0%, #3b82f6 45%, #06b6d4 100%);
+  --g-violet: linear-gradient(120deg, #2563eb 0%, #7c5cfc 100%);
+  --surface-alt: #f7f9fc; --border: #e4eaf3;
+  --on-dark-text: #b9c6df; --on-dark-strong: #e6ecf8;
+}
+.theme-said .notice { background: #f0f6ff; color: var(--ink-700); border-bottom-color: var(--border); }
+.theme-said .notice strong { color: var(--brand-700); }
+
+/* filled accents: gradient + white text */
+.theme-said .on-dark .btn-primary, .theme-said .section-dark .btn-primary,
+.theme-said.header-overlay .header-cta,
+.theme-said.header-overlay .site-header:not(.is-scrolled):not(:has(.nav-item.is-open)) .header-cta,
+.theme-said .header-cta {
+  background: var(--g-fresh); background-size: 180% 100%; color: #fff; border: 0; box-shadow: 0 12px 30px -12px rgba(var(--b600-rgb), .75);
+  transition: background-position .4s var(--ease), transform .2s var(--ease), box-shadow .2s var(--ease);
+}
+.theme-said .on-dark .btn-primary:hover, .theme-said .section-dark .btn-primary:hover, .theme-said .header-cta:hover {
+  background-position: 100% 0; color: #fff; box-shadow: 0 16px 36px -12px rgba(var(--b600-rgb), .85);
+}
+.theme-said .btn-primary { background: var(--g-fresh); background-size: 180% 100%; color: #fff; }
+.theme-said .btn-primary:hover { background-position: 100% 0; color: #fff; }
+.theme-said .on-dark .text-link, .theme-said .section-dark .text-link,
+.theme-said .card.spot .text-link, .theme-said .card.spot .num { color: #67e8f9; }
+
+/* hero */
+.theme-said .hero-dark { background: radial-gradient(120% 90% at 0% 0%, #1e3a8a 0%, var(--ink-950) 58%); }
+.theme-said .hero-dark::after {
+  background:
+    radial-gradient(28% 32% at 78% 28%, rgba(var(--gold-rgb), .22), transparent 70%),
+    radial-gradient(34% 40% at 20% 80%, rgba(var(--b500-rgb), .4), transparent 70%),
+    radial-gradient(30% 34% at 90% 85%, rgba(var(--purple-rgb), .3), transparent 70%);
+}
+.theme-said .hero-dark .accent { background: linear-gradient(100deg, #3b82f6 0%, #06b6d4 30%, #a5f3fc 50%, #7c5cfc 75%, #3b82f6 100%); background-size: 250% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; }
+.theme-said .badge { background: rgba(255,255,255,.08); border-color: rgba(var(--gold-rgb), .4); }
+.theme-said .stage-ring { background: conic-gradient(from var(--said-a, 0deg), rgba(var(--gold-rgb), 0), rgba(var(--gold-rgb), .9), rgba(var(--purple-rgb), .9), rgba(var(--gold-rgb), 0) 70%); }
+.theme-said .chip-ic, .theme-said .c2 .chip-ic, .theme-said .c4 .chip-ic { background: var(--g-fresh); color: #fff; }
+.theme-said .c4 .chip-ic { background: var(--g-violet); }
+
+/* running band */
+.theme-said .ticker { background: var(--g-fresh); color: #fff; }
+.theme-said .ticker li::after { background: #fff; opacity: .8; }
+
+/* icons, numbers, markers that were yellow */
+.theme-said .card.spot:hover .icon, .theme-said .value:hover .value-ic { background: var(--g-fresh); color: #fff; border-color: transparent; }
+.theme-said .photo-card .num { background: var(--g-fresh); color: #fff; }
+.theme-said .checks li::before { background: var(--g-fresh); }
+.theme-said .checks li::after { border-color: #fff; }
+.theme-said .tl-ic { background: var(--g-fresh); color: #fff; box-shadow: 0 0 0 6px rgba(var(--b500-rgb), .18), 0 12px 30px rgba(var(--gold-rgb), .3); }
+.theme-said .tl-step { color: #67e8f9; }
+.theme-said .industry-tile:hover .industry-go { background: var(--g-fresh); color: #fff; }
+.theme-said .post-card .tag { background: var(--brand-50); color: var(--brand-700); }
+.theme-said .video-card .play { background: var(--g-fresh); }
+.theme-said .video-card .play svg { fill: #fff; }
+.theme-said .quote-card { background: linear-gradient(135deg, var(--brand-800), var(--ink-950)); }
+.theme-said .avatar { background: var(--g-violet); }
+.theme-said .about-media::before { background: radial-gradient(rgba(var(--b500-rgb), .7) 2px, transparent 2.5px) 0 0 / 14px 14px; }
+.theme-said .fact-num { background: var(--g-fresh); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.theme-said .facts-grid li::before { background: linear-gradient(180deg, #06b6d4, #2563eb); }
+
+/* section backgrounds: brighter rhythm */
+.theme-said .services-dark { background: linear-gradient(180deg, var(--ink-950), #0b1d4a); }
+.theme-said .services-dark::before { background: radial-gradient(45% 50% at 0% 0%, rgba(var(--b500-rgb), .35), transparent 70%), radial-gradient(35% 45% at 100% 100%, rgba(var(--purple-rgb), .22), transparent 70%); }
+.theme-said .process { background: radial-gradient(90% 120% at 100% 0%, #1e3a8a 0%, var(--ink-950) 60%); }
+.theme-said .process::before { background: radial-gradient(35% 50% at 10% 100%, rgba(var(--purple-rgb), .22), transparent 70%); }
+.theme-said .cta-final::before { background: linear-gradient(100deg, rgba(var(--ink950-rgb), .95) 0%, rgba(var(--b700-rgb), .8) 60%, rgba(var(--purple-rgb), .6) 100%) !important; }
+.theme-said .site-footer::before { height: 1px; background: linear-gradient(90deg, transparent, rgba(var(--gold-rgb), .8), rgba(var(--purple-rgb), .8), transparent); }
